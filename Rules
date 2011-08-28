@@ -1,16 +1,16 @@
 #!/usr/bin/env ruby
 
-route '/_HelloBlockies/' do 
-  '/_HelloBlockies/index.html' 
+route '/HelloBlockies/' do 
+  '/HelloBlockies/index.html' 
 end
-compile '/_HelloBlockies/' do
+compile '/HelloBlockies/' do
   filter :haml
   layout  '_HB'
 end
-route "/_HelloBlockies/*" do
+route "/HelloBlockies/*" do
   nil
 end
-compile '/_HelloBlockies/*' do
+compile '/HelloBlockies/*' do
   filter :haml
 end
 
