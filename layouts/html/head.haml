@@ -1,0 +1,11 @@
+%meta{"http-equiv" => "X-UA-Compatible", :content => "IE=EmulateIE7,IE=edge"}
+%meta{:charset => "utf-8"}
+%meta{:name => "viewport", :content => "width=device-width"}
+
+%link{:rel => "shortcut icon", :type => "image/x-icon", :href => "/favicon.ico"}
+
+/ TODO: build two versions of stylesheets, on for ie and one for others
+%link{:rel => "stylesheet", :href => "/s/style.css"}
+/[if IE]
+  %script{:src => "/s/style_ie.css"}
+  %link{:rel => "stylesheet", :href => "/s/style_ie.css"}

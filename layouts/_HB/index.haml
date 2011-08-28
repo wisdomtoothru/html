@@ -1,0 +1,11 @@
+!!! 5
+%html#nojs
+  %head
+    = render 'html/head'
+    %link{:rel => "stylesheet", :href => "/s/_HelloBlockies.css"}
+      
+    %title Hello, Blockies!
+  %body
+    .hb-page
+      = yield
+    = render "html/foot"

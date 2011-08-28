@@ -1,0 +1,17 @@
+- blockies = item.children
+
+- blockies.each do |blockie|
+  .hb-table{:style=>blockie[:style]}
+    %table.hb-table-in
+      %CAPTION.hb-table-caption
+        =blockie[:title]
+      %tbody.hb-table-section
+        - blockie.compiled_content.split(/(?=\n<!--)/).each do |blockieSubItem|
+          %TR.hb-table-row
+            - blockieSubItemParts = blockieSubItem.match(/\s*<!--(.+)-->\s*(.+)/m)
+            %th.hb-table-cell
+              .hb-table-cell-in
+                = blockieSubItemParts[1]
+            %td.hb-table-cell
+              .hb-table-cell-in
+                = blockieSubItemParts[2]

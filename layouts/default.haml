@@ -1,0 +1,9 @@
+!!! 5
+%html#nojs
+  %head
+    = render 'html/head'
+    %title<
+      = @item[:title]
+  %body
+    = yield
+    = render "html/foot"

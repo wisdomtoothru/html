@@ -1,0 +1,53 @@
+---
+title: "Ссылки"
+style: "font-size: 16px;"
+---
+
+/ Просто
+%A.b-link(href='#lol')
+  Hello!
+
+/ С кавычками
+%A.b-link_W(href='#lol')<
+  «
+  %span.b-link-in><
+    Hello!
+  »
+
+/ Со стрелочкой
+%A.b-link_W(href='#lol')<
+  ←
+  %span.b-link-in<
+    поиск
+
+/ Со звёздочкой
+%A.b-link_W(href='#lol')<
+  %span.b-link-in<
+    правда
+  *
+
+/ Псевдо
+%A.b-link.b-link_js(href='#lol')
+  Hello!
+
+/ Псевдо с кавычками
+%A.b-link_W.b-link_js(href='#lol')<
+  «
+  %span.b-link-in><
+    Hello!
+  »
+
+/С иконкой
+%A.b-link_W(href='http://example.com/')<
+  %b.b-ico.b-ico_pseudo.b-ico_external
+    %b.b-ico-i1
+    %b.b-ico-i2
+  %span.b-link-in><
+    example.com
+
+/С циферкой
+%A.b-link_W(href='#lol')<
+  %span.b-link-in
+    Hello!
+  %sup.b-link-in>
+    32

@@ -1,0 +1,186 @@
+/* Some Reset */ HTML,BODY,DIV,SPAN,OBJECT,IFRAME,H1,H2,H3,H4,H5,H6,P,BLOCKQUOTE,PRE,ABBR,ADDRESS,CITE,CODE,DEL,DFN,EM,IMG,INS,KBD,Q,SAMP,SMALL,STRONG,SUB,SUP,VAR,B,I,DL,DT,DD,OL,UL,LI,FIELDSET,FORM,LABEL,LEGEND,TABLE,CAPTION,TBODY,TFOOT,THEAD,TR,TH,TD,ARTICLE,ASIDE,DIALOG,FIGURE,FOOTER,HEADER,HGROUP,MENU,NAV,SECTION,TIME,MARK,AUDIO,VIDEO{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}ARTICLE,ASIDE,DIALOG,FIGURE,FOOTER,HEADER,HGROUP,NAV,SECTION{display:block;}BLOCKQUOTE,Q{quotes:none;}BLOCKQUOTE:before,BLOCKQUOTE:after,Q:before,Q:after{content:'';content:none;}INS{text-decoration:none;}DEL{text-decoration:line-through;}ABBR[title],DFN[title]{border-bottom:1px dotted;cursor:help;}TABLE{border-collapse:collapse;border-spacing:0;}HR{display:none;}INPUT,SELECT{vertical-align:middle;}
+
+/* Basic Styles
+---------------------------------------*/
+BODY {
+	font: 62.5%/1.375 Arial, sans-serif; /* "Helvetica Neue", Helvetica, ? */
+
+	color: #000;
+	background: #FFF;
+	}
+
+/* Styles to make backgrounds and pop-ups all-height */
+HTML,
+BODY {
+	height:100%;
+	}
+
+/* Prevent jumping if there're not enought content to create scroll */
+HTML {
+	overflow-y:scroll;
+	}
+
+/* Links
+---------------------------------------*/
+.b-link,
+.b-link_W {
+	cursor: pointer;
+	color: #1181C9; /* Move to variable */
+	}
+
+/* Link with extras */
+.b-link_W {
+	display: inline-block;
+
+	text-decoration: none;
+	}
+	.b-link-in {
+		display: inline-block;
+
+		line-height: 1.1;
+		text-decoration: underline;
+		}
+.b-link_W .b-ico {
+	margin-top: -2px;
+	}
+
+/* Pseudo-link */
+#js .b-link_js,
+#js .b-link_js .b-link-in {
+	text-decoration: none;
+	border-bottom: 1px dashed;
+	}
+#js .b-link_W {
+	border-bottom: 0;
+	}
+
+/* Sup numbers */
+SUP.b-link-in {
+	position: relative;
+	bottom: 1.4ex;
+
+	border-bottom: 0 !important;
+	padding-left: 2px;
+
+	vertical-align: baseline;
+	text-decoration: none !important;
+
+	font-size: .625em;
+	line-height: 1;
+	
+	color: #000;
+	}
+
+/* Hover */
+A.b-link:hover,
+A.b-link_W:hover {
+	color: #F00; /* Move to variable */
+	}
+
+/* Icons
+---------------------------------------*/
+.b-ico {
+	display: inline-block;
+	
+	vertical-align: middle;
+	}
+
+/* Pseudo-icons (without images) */ /**/
+.b-ico_pseudo {
+	position: relative;
+	}
+
+/* Icon for external images */
+.b-ico_external {
+	width: 10px;
+	height: 7px;
+	}
+	.b-ico_external>.b-ico-i1,
+	.b-ico_external>.b-ico-i2 {
+		position: absolute;
+		}
+	.b-ico_external>.b-ico-i1 {
+		top: 0;
+		left: 2px;
+		
+		width: 4px;
+		height: 2px;
+		border: 1px solid;
+		border-top-width: 2px;
+		}
+	.b-ico_external>.b-ico-i2 {
+		top: 2px;
+		left: 0;
+		
+		width: 4px;
+		height: 4px;
+		border: solid;
+		border-width: 0 0 1px 1px;
+		}
+	
+/* Menus
+---------------------------------------*/
+.b-menu {
+	padding: 2px 0 3px;
+	
+	list-style: none;
+
+	font-size: 1.6em;
+	}
+	.b-menu-item {
+		display: inline-block;
+
+		vertical-align: top;
+		}
+	.b-menu-item-in {
+		position: relative;
+	
+		display: inline-block;
+
+		padding: 5px 12px 4px;
+		margin: -2px 0 -3px;
+
+		text-decoration: none;
+
+		color: #00BF81; /* Move to variable */
+
+		-webkit-border-radius: 6px;
+		   -moz-border-radius: 6px;
+		        border-radius: 6px;
+		}
+	.b-menu-item-in:link,
+	.b-menu-item-in:visited {
+		text-decoration: underline;
+		}
+/* Hovered item */
+A.b-menu-item-in:link:hover,
+A.b-menu-item-in:visited:hover {
+	z-index: 9;
+	color: #E7002D;
+	background: #F8E3DE; /* Move to variable */
+	}
+	
+/* Current item */
+.b-menu-item_current .b-menu-item-in {
+	color: #FFF !important;
+	background: #00BF81 !important; /* Move to variable */
+	}
+	
+/* Vertical menu */
+.b-menu_v .b-menu-item {
+	display: block;
+	}
+
+/* Pages menu */
+.b-menu_pages .b-menu-item {
+	margin-right: 11px;
+	}
+
+/* Breadcrumbs */
+.b-menu_crumbs .b-menu-item {
+	margin-right: 4px;
+	}
+.b-menu_crumbs .b-menu-item:after {
+	content: "/";
+	margin-left: 4px;
+	}
