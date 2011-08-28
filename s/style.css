@@ -74,7 +74,7 @@ SUP.b-link-in {
 /* Hover */
 A.b-link:hover,
 A.b-link_W:hover {
-	color: #F00; /* Move to variable */
+	color: #E7002D; /* Move to variable */
 	}
 
 /* Icons
@@ -132,6 +132,10 @@ A.b-link_W:hover {
 
 		vertical-align: top;
 		}
+		.b-menu-item .b-link {
+			color: #00BF81; /* Move to variable */
+			}
+		
 	.b-menu-item-in {
 		position: relative;
 	
