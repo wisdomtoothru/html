@@ -1,8 +1,12 @@
+- @prefix = ''
+- (item.identifier.match(/(\/)/).length-1).times do
+  - @prefix+='../'
+
 !!! 5
 %html#nojs
   %head
     = render 'html/head'
-    %link{:rel => "stylesheet", :href => "/s/_HelloBlockies.css"}
+    %link{:rel => "stylesheet", :href => @prefix + "s/_HelloBlockies.css"}
       
     %title Hello, Blockies!
   %body

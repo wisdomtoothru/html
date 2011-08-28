@@ -56,10 +56,8 @@ compile '*' do
     filter :htmlcodestyle
     
     # relative paths to html and css for better use of static files
-    if config[:relative_paths]
-      filter :relativize_paths, :type => :html
-      filter :relativize_paths, :type => :css
-    end
+    filter :relativize_paths, :type => :html
+    filter :relativize_paths, :type => :css
   end
 end
 

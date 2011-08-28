@@ -1,3 +1,7 @@
+- @prefix = ''
+- (item.identifier.match(/(\/)/).length-1).times do
+  - @prefix+='../'
+
 / TODO: need non-blocking js includes here
-%script{:src => "/j/script.js"}
+%script{:src => @prefix + "j/script.js"}
 / The end.
