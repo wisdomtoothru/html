@@ -20,6 +20,24 @@ HTML {
 	overflow-y:scroll;
 	}
 
+/* Sup */
+SUP {
+	position: relative;
+	bottom: 1.4ex;
+	
+	display: inline-block;
+
+	border-bottom: 0 !important;
+	padding-left: .25em;
+
+	vertical-align: baseline;
+	text-decoration: none !important;
+
+	font: .625em/1 Arial, sans-serif;
+	
+	color: #000;
+	}
+
 /* Links
 ---------------------------------------*/
 .b-link {
@@ -53,27 +71,17 @@ HTML {
 	border-bottom: 0;
 	}
 
-/* Sup numbers */
-SUP.b-link-in {
-	position: relative;
-	bottom: 1.4ex;
-
-	border-bottom: 0 !important;
-	padding-left: 2px;
-
-	vertical-align: baseline;
-	text-decoration: none !important;
-
-	font-size: .625em;
-	line-height: 1;
-	
-	color: #000;
-	}
-
 /* Hover */
 A.b-link:hover {
 	color: #E7002D; /* Move to variable */
 	}
+
+/* Multiline */
+.b-link_multiline,
+.b-link_multiline .b-link-in {
+	display: inline;
+	}
+
 
 /* Icons
 ---------------------------------------*/
@@ -389,4 +397,12 @@ A.b-menu-item-in:visited:hover {
 /* Middle */
 .b-header_middle {
 	font-size: 3.0em;
+	}
+
+/* Sup numbers */
+.b-header_big>SUP {
+	font-size: 0.58333em;
+	}
+.b-header_middle>SUP {
+	font-size: 0.6em;
 	}
