@@ -363,3 +363,30 @@ A.b-menu-item-in:visited:hover {
 	.b-button_v2 .b-button-in:before {
 		border-top-color: #5DEDB9;
 		}
+
+/* Headers
+---------------------------------------*/
+.b-header {
+	font: 2.1em/1.238em Georgia, serif;
+	color: #006FBA;
+	}
+.b-header .b-link {
+	padding: .1em 0;
+	color: inherit;
+	}
+
+/* Second version */
+.b-header_v2 {
+	color: #22B583;
+	}
+
+/* Big */
+.b-header_big {
+	font-size: 4.8em;
+	line-height: 1.125em;
+	}
+
+/* Middle */
+.b-header_middle {
+	font-size: 3.0em;
+	}
