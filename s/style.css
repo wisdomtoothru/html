@@ -82,7 +82,6 @@ A.b-link:hover {
 	display: inline;
 	}
 
-
 /* Icons
 ---------------------------------------*/
 .b-ico {
@@ -382,6 +381,10 @@ A.b-menu-item-in:visited:hover {
 	padding: .1em 0;
 	color: inherit;
 	}
+.b-header.b-link {
+	padding: .1em 0;
+	}
+
 
 /* Second version */
 .b-header_v2 {
