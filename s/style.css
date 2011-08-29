@@ -135,6 +135,8 @@ A.b-link:hover {
 	.b-menu-item {
 		display: inline-block;
 
+		margin-right: 9px;
+
 		vertical-align: top;
 		}
 		.b-menu-item .b-link {
@@ -146,7 +148,7 @@ A.b-link:hover {
 	
 		display: inline-block;
 
-		padding: 5px 12px 4px;
+		padding: 5px 14px 4px;
 		margin: -2px 0 -3px;
 
 		text-decoration: none;
@@ -178,11 +180,7 @@ A.b-menu-item-in:visited:hover {
 /* Vertical menu */
 .b-menu_v .b-menu-item {
 	display: block;
-	}
-
-/* Pages menu */
-.b-menu_pages .b-menu-item {
-	margin-right: 11px;
+	margin-right: 0;
 	}
 
 /* Breadcrumbs */
