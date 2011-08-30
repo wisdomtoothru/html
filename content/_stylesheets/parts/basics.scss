@@ -1,0 +1,37 @@
+/* Basic Styles
+---------------------------------------*/
+BODY {
+	font: 62.5%/1.375 Arial, sans-serif; /* "Helvetica Neue", Helvetica, ? */
+
+	color: #000;
+	background: #FFF;
+	}
+
+/* Styles to make backgrounds and pop-ups all-height */
+HTML,
+BODY {
+	height:100%;
+	}
+
+/* Prevent jumping if there're not enought content to create scroll */
+HTML {
+	overflow-y:scroll;
+	}
+
+/* Sup */
+SUP {
+	position: relative;
+	bottom: 1.4ex;
+	
+	display: inline-block;
+
+	border-bottom: 0 !important;
+	padding-left: .25em;
+
+	vertical-align: baseline;
+	text-decoration: none !important;
+
+	font: .625em/1 Arial, sans-serif;
+	
+	color: #000;
+	}

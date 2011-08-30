@@ -16,6 +16,9 @@ end
 
 # Stylesheets in `s` directory
 compile '/_stylesheets/*' do
+  filter :sass, {:syntax => :scss} if item[:extension] == 'scss'
+end
+route '/_stylesheets/parts/*' do
 end
 route '/_stylesheets/*/' do
   '/s/' + item.identifier[14..-2] + '.css'

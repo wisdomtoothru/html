@@ -1,0 +1,43 @@
+/* Links
+---------------------------------------*/
+.b-link {
+	cursor: pointer;
+	color: #1181C9; /* Move to variable */
+	}
+
+/* Link with extras */
+.b-link_w {
+	display: inline-block;
+
+	text-decoration: none;
+	}
+	.b-link-in {
+		display: inline-block;
+
+		line-height: 1.1;
+		text-decoration: underline;
+		}
+.b-link_w .b-ico {
+	margin-top: -2px;
+	}
+
+/* Pseudo-link */
+#js .b-link_js,
+#js .b-link_js .b-link-in {
+	text-decoration: none;
+	border-bottom: 1px dashed;
+	}
+#js .b-link_w {
+	border-bottom: 0;
+	}
+
+/* Hover */
+A.b-link:hover {
+	color: #E7002D; /* Move to variable */
+	}
+
+/* Multiline */
+.b-link_multiline,
+.b-link_multiline .b-link-in {
+	display: inline;
+	}

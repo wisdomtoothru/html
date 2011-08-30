@@ -1,0 +1,40 @@
+/* Icons
+---------------------------------------*/
+.b-ico {
+	display: inline-block;
+	
+	vertical-align: middle;
+	}
+
+/* Pseudo-icons (without images) */ /**/
+.b-ico_pseudo {
+	position: relative;
+	}
+
+/* Icon for external images */
+.b-ico_external {
+	width: 10px;
+	height: 7px;
+	}
+	.b-ico_external>.b-ico-i1,
+	.b-ico_external>.b-ico-i2 {
+		position: absolute;
+		}
+	.b-ico_external>.b-ico-i1 {
+		top: 0;
+		left: 2px;
+		
+		width: 4px;
+		height: 2px;
+		border: 1px solid;
+		border-top-width: 2px;
+		}
+	.b-ico_external>.b-ico-i2 {
+		top: 2px;
+		left: 0;
+		
+		width: 4px;
+		height: 4px;
+		border: solid;
+		border-width: 0 0 1px 1px;
+		}
