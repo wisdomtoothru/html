@@ -16,7 +16,10 @@ end
 
 # Stylesheets in `s` directory
 compile '/_stylesheets/*' do
-  filter :sass, {:syntax => :scss} if item[:extension] == 'scss'
+  if item[:extension] == 'scss'
+    filter :erb
+    filter :sass, {:syntax => :scss}
+  end
 end
 route '/_stylesheets/parts/*' do
 end
