@@ -19,6 +19,7 @@ compile '/_stylesheets/*' do
   if item[:extension] == 'scss'
     filter :erb
     filter :sass, {:syntax => :scss}
+    filter :cssmerge
   end
 end
 route '/_stylesheets/parts/*' do

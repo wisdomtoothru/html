@@ -3,22 +3,24 @@
 .b-link {
 	cursor: pointer;
 	color: #1181C9; /* Move to variable */
-	}
 
-/* Link with extras */
-.b-link_w {
-	display: inline-block;
+	/* Link with extras */
+	._w {
+		display: inline-block;
 
-	text-decoration: none;
-	}
-	.b-link-in {
+		text-decoration: none;
+
+		.b-ico {
+			margin-top: -2px;
+			}
+		}
+	/* Inner element */
+	.-in {
 		display: inline-block;
 
 		line-height: 1.1;
 		text-decoration: underline;
 		}
-.b-link_w .b-ico {
-	margin-top: -2px;
 	}
 
 /* Pseudo-link */

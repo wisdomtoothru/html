@@ -32,3 +32,16 @@ class HTMLCodeStyle < Nanoc3::Filter
     return result
   end
 end
+
+class CSSMerge < Nanoc3::Filter
+  identifier :cssmerge
+  type :text
+  
+  def run(content, params={})
+    result = content
+    
+    result.gsub!(/(\.b-.+) \.([-_]|__)([^-_\s].*\{)/, '\1\2\3')
+
+    return result
+  end
+end
