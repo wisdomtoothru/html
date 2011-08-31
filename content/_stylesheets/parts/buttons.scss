@@ -96,7 +96,10 @@
 		   -moz-border-radius: 5px;
 		        border-radius: 5px;
 		}
-	/* Fix for Fx */
+	/* Fixes for buttony buttons */
+	BUTTON.b-button {
+		overflow: visible;
+		}
 	BUTTON.b-button::-moz-focus-inner {
 		padding: 0;
 		border: none;
