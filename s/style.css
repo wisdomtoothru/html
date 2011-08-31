@@ -411,3 +411,43 @@ button.b-button:hover .b-button-in:before {
 .b-ad_top {
   display: block;
   border-bottom: 2px solid #E1F6FF; }
+
+/* Layout, for really equal columns (each is 5%)
+---------------------------------------*/
+.b-layout {
+  position: relative;
+  width: 5%;
+  height: 100%;
+  margin: 0 auto; }
+
+.b-layout-in {
+  position: relative;
+  left: 50%;
+  width: 2000%;
+  margin-left: -1000%;
+  height: 100%; }
+
+.b-col {
+  position: relative;
+  left: 5%;
+  /* Using left so no need in margins or any hacks */
+  display: inline-block;
+  vertical-align: top; }
+
+.b-col_whole {
+  width: 90%; }
+
+.b-col_wide {
+  width: 65%; }
+
+.b-col_half {
+  width: 50%; }
+
+.b-col_narrow {
+  width: 25%; }
+
+.b-col_tight {
+  width: 15%; }
+
+.b-col .b-col {
+  left: 0; }
