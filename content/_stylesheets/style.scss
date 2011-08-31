@@ -1,8 +1,16 @@
-@import "parts/reset";
-@import "parts/basics";
-@import "parts/links";
-@import "parts/icons";
-@import "parts/menus";
-@import "parts/buttons";
-@import "parts/headers";
-@import "parts/ads";
+<% @imports = '
+@import "parts/reset.scss";
+@import "parts/basics.scss";
+@import "parts/links.scss";
+@import "parts/icons.scss";
+@import "parts/menus.scss";
+@import "parts/buttons.scss";
+@import "parts/headers.scss";
+@import "parts/ads.scss";
+@import "parts/layouts.scss";
+'
+  @imports += '@import "parts/debug.scss";' if @config[:debug]
+  @imports.gsub!('.scss','.css') if @config[:debug]
+%>
+
+<%= @imports %>
