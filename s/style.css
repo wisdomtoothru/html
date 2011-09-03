@@ -160,7 +160,6 @@ A.b-link:hover {
   position: relative;
   display: inline-block;
   padding: 5px 14px 4px;
-  margin: -2px 0 -3px;
   text-decoration: none;
   color: #00BF81;
   /* Move to variable */
@@ -189,7 +188,7 @@ A.b-menu-item-in:visited:hover {
 /* Vertical menu */
 .b-menu_v .b-menu-item {
   display: block;
-  margin-right: 0; }
+  margin: 0 0 7px; }
 
 /* Breadcrumbs */
 .b-menu_crumbs .b-menu-item {
