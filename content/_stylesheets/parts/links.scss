@@ -3,9 +3,9 @@
 .b-link {
 	cursor: pointer;
 	color: #1181C9; /* Move to variable */
-
+	}
 	/* Link with extras */
-	._w {
+	.b-link_w {
 		display: inline-block;
 
 		text-decoration: none;
@@ -15,13 +15,12 @@
 			}
 		}
 	/* Inner element */
-	.-in {
+	.b-link-in {
 		display: inline-block;
 
 		line-height: 1.1;
 		text-decoration: underline;
 		}
-	}
 
 /* Pseudo-link */
 #js .b-link_js,
