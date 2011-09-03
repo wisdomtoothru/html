@@ -79,4 +79,33 @@
 		font-size: .857em;
 		}
 
+/* Tool snippet */
+.b-snippet_tool {
+	padding-left: 50px; /* Need to adjust for context */
+	}
+	.b-snippet_tool:before {
+		content: "";
 	
+		float: left;
+	
+		width: 50px; /* Need to adjust for context */
+		height: 133px;
+	
+		margin: .5em 0 0 -50px; /* Need to adjust for context */
+		background: url(../../i/tools.png) 50% 100% no-repeat;
+		}
+		.b-snippet_tool_v2:before {
+			background-position: 50% 0;
+			}
+	.b-snippet_tool .b-header {
+		padding-bottom: 0;
+		}
+	.b-snippet_tool .b-snippet-content {
+		clear: none;
+		
+		padding-left: 0;
+		padding-bottom: .9em;
+		
+		font-size: 1.4em;
+		}
+
