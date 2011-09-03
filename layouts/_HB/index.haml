@@ -1,5 +1,5 @@
 - @prefix = ''
-- (item.identifier.match(/(\/)/).length-1).times do
+- (item.reps[0].path.gsub(/[^\/]/,'').length-1).times do
   - @prefix+='../'
 
 !!! 5
