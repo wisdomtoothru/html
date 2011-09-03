@@ -489,7 +489,8 @@ button.b-button:hover .b-button-in:before {
 /* Post snippets
 ---------------------------------------*/
 .b-snippet {
-  position: relative; }
+  position: relative;
+  margin: 0 0 1.1em; }
 
 .b-snippet-figure {
   float: right;
