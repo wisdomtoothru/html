@@ -1,4 +1,4 @@
-.b-layout-in:after {
+#js:target .b-layout-in:after {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -9,9 +9,4 @@
 	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAAJAgMAAADcPe7NAAAADFBMVEUAAADH2ej/srL/uN4KBUV3AAAABHRSTlMAgICAhJ1mcQAAADlJREFUSMdjOMCAA9BDogGHODMDPSSQncWCy720kkD2ugAu99JMYjTWR2N9NNZHY3001kdjfbjFOgB94ShYtcZUUQAAAABJRU5ErkJggg==') 0 0  repeat-y;
 	background-size: 100% 9px;
 	pointer-events: none;
-	}
-
-.b-col,
-.b-cols {
-	background: rgba(0,0,0,0.1);
 	}

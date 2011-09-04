@@ -10,6 +10,7 @@
 @import "parts/layouts.scss";
 @import "parts/snippets.scss";
 @import "parts/terms.scss";
+@import "parts/footer.scss";
 '
   @imports += '@import "parts/debug.scss";' if @config[:debug]
   @imports.gsub!('.scss','.css') if @config[:debug]

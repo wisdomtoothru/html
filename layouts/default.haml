@@ -5,5 +5,21 @@
     %title<
       = @item[:title]
   %body
-    = yield
+    .b-ad.b-ad_top
+      %img.b-ad-pic{:src => "http://placekitten.com/720/90", :alt => ""}/
+
+    .b-layout
+      .b-layout-in
+        = yield
+        %footer.b-footer.b-cols
+          .b-footer-copy.b-col.b-col_narrow>
+            .b-footer-company© Мудрый зуб
+            2010, Все права защищены.
+          %ul.b-menu.b-col.b-col_wide><
+            %li.b-menu-item><
+              %a.b-menu-item-in{:href => "#lol"} О проекте
+            %li.b-menu-item><
+              %a.b-menu-item-in{:href => "#lol"} Реклама
+            %li.b-menu-item><
+              %a.b-menu-item-in{:href => "#lol"} Партнёрам
     = render "html/foot"
