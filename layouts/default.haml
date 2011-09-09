@@ -1,5 +1,6 @@
+- @page_id = "b-page_" + @item[:page_id] if @item[:page_id]
 !!! 5
-%html#nojs
+%html#nojs.b-page{:class => @page_id}
   %head
     = render 'html/head'
     %title<
@@ -10,10 +11,35 @@
 
     .b-layout
       .b-layout-in
+        %header.b-page-header.b-cols
+          %h1.b-page-logo.b-col.b-col_tight>
+            %span.b-page-logo-in
+              Зуб мудрости
+          %nav.b-page-nav.b-col.b-col_half_padded>
+            %ul.b-menu.b-menu_v<
+              %li.b-menu-item><
+                %a.b-menu-item-in{:href => "#lol"} Статьи
+              %li.b-menu-item><
+                %a.b-menu-item-in{:href => "#lol"} Видео
+            %ul.b-menu.b-menu_v<
+              %li.b-menu-item><
+                %a.b-menu-item-in{:href => "#lol"} Каталог клиник
+              %li.b-menu-item><
+                %a.b-menu-item-in{:href => "#lol"} Вопрос-ответ
+            %ul.b-menu.b-menu_v<
+              %li.b-menu-item><
+                %a.b-menu-item-in{:href => "#lol"} Скорая помощь
+              %li.b-menu-item><
+                %a.b-menu-item-in{:href => "#lol"} Словарь терминов
+          .b-col.b-col_narrow>
+            search & blah blah
+          .b-page-likes.b-col.b-col_half_padded>
+            Facebook, Tweet, Vkontakte
+            
         = yield
-        %footer.b-footer.b-cols
-          .b-footer-copy.b-col.b-col_narrow>
-            .b-footer-company© Мудрый зуб
+        %footer.b-page-footer.b-cols
+          .b-page-copy.b-col.b-col_narrow>
+            .b-page-company© Мудрый зуб
             2010, Все права защищены.
           %ul.b-menu.b-col.b-col_wide><
             %li.b-menu-item><
