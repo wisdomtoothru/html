@@ -1,0 +1,122 @@
+/* Accordion/boyan
+---------------------------------------*/
+.b-boyan {
+	overflow: hidden;
+	}
+	.b-boyan:after {
+		content: "";
+		position: absolute;
+		top: 30px;
+		right: -20px;
+		bottom: -4px;
+
+		width: 20px;
+		
+		-webkit-box-shadow: 0 0 20px rgba(154,176,190,0.8);
+		   -moz-box-shadow: 0 0 20px rgba(154,176,190,0.8);
+		     -o-box-shadow: 0 0 20px rgba(154,176,190,0.8);
+		        box-shadow: 0 0 20px rgba(154,176,190,0.8);
+		}
+	.b-boyan_noshadow:after {
+		visibility: hidden;
+		}
+	
+	.b-boyan-item {
+		position: relative;
+
+		float: left;
+
+		cursor: pointer;
+		
+		margin-right: -100%;
+		}
+		.b-boyan-item:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			}
+	.b-boyan-item_current {
+		cursor: default;
+		}
+		.b-boyan-item_current:after {
+			display: none;
+			}
+		
+		.b-boyan-item:first-child {
+			margin-left: 0;
+			}
+		
+		.b-boyan-tab {
+			position: relative;
+			z-index: 9;
+			
+			display: inline-block;
+			
+			height: 34px;
+			padding: 0 9px;
+			margin: 0 0 -3px 18px;
+			
+			vertical-align: top;
+			
+			font-size: 1.2em;
+			line-height: 34px;
+			font-weight: normal;
+			
+			color: #FFF;
+
+			background: #006ABF;
+			}
+			.b-boyan-tab:before,
+			.b-boyan-tab:after {
+				content: "";
+				
+				position: absolute;
+				top: 0;
+				
+				width: 12px;
+				height: 100%;
+				
+				-webkit-border-radius: 3px 3px 0 0;
+				   -moz-border-radius: 3px 3px 0 0;
+				        border-radius: 3px 3px 0 0;
+				
+				background: inherit;
+				}
+			.b-boyan-tab:before {
+				left: -7px;
+			    -webkit-transform: skew(-16deg);
+			       -moz-transform: skew(-16deg);
+			         -o-transform: skew(-16deg);
+			            transform: skew(-16deg);
+				}
+			.b-boyan-tab:after {
+				right: -7px;
+			    -webkit-transform: skew(16deg);
+			       -moz-transform: skew(16deg);
+			         -o-transform: skew(16deg);
+			            transform: skew(16deg);
+				}
+
+			.b-boyan-item_v2 .b-boyan-tab {
+				background: #00BF81;
+				}
+			
+		.b-boyan-item .b-snippet {
+			padding: 10px 14px;
+			border: 3px solid #E1F6FF;
+			margin: 0 -3px 0 0;
+			
+			background: #FFF;
+			
+			-webkit-border-radius: 6px;
+			   -moz-border-radius: 6px;
+			        border-radius: 6px;
+			
+			}
+		.b-boyan-item .b-snippet-figure {
+			margin: -10px -14px 0 0;
+			}
+		
