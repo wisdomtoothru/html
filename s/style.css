@@ -397,7 +397,9 @@ button.b-button_v2:hover {
   color: #8EDBFF; }
 
 .b-ad-in {
+  display: inline-block;
   padding: 5px;
+  vertical-align: top;
   background: #E1F6FF;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -453,6 +455,10 @@ button.b-button_v2:hover {
 .b-col_wide .b-cols_stretch {
   left: -7.7%;
   width: 153.9%; }
+
+.b-col_middle {
+  width: 40%;
+  margin: 0 5%; }
 
 .b-col_half {
   width: 50%; }
@@ -612,7 +618,7 @@ button.b-button_v2:hover {
 /* Header
 ---------------------------------------*/
 .b-page-header {
-  padding: 30px 0 5px; }
+  padding: 30px 0 18px; }
 
 .b-page-logo-in {
   position: relative;
@@ -784,3 +790,28 @@ button.b-button_v2:hover {
 
 .b-page_homepage .b-page-content {
   margin-top: 37px; }
+
+/* Articles
+---------------------------------------*/
+.b-page_articles .b-header_big {
+  position: relative;
+  left: -15px;
+  width: 70%;
+  margin-left: 25%;
+  margin-bottom: 18px; }
+
+.b-page_articles .b-col_middle .b-snippet {
+  margin: 0 0 38px -15px; }
+
+.b-page_articles .b-col_middle .b-snippet-figure {
+  margin: 0 -20px 0 0; }
+
+.b-page_articles .b-page-content .b-col_tight .b-menu {
+  margin-top: -4px; }
+
+.b-page_articles .b-page-content .b-col_tight .b-menu-item-in {
+  display: block;
+  margin-right: -14px; }
+
+.b-page_articles .b-page-content .b-ad {
+  margin-bottom: 24px; }
