@@ -12,12 +12,12 @@ document.documentElement.id = "js";
 			$(this).prevAll().each(function() {
 				$(this).animate({
 					left: $(this).index()*step + '%'
-				})
+				}, 300)
 			});
 			$(this).nextAll().each(function() {
 				$(this).animate({
 					left: 50+($(this).index()-1)*step + '%'
-				})
+				}, 300)
 			});
 			$(this).animate({
 				left: $(this).index()*step + '%'

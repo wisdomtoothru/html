@@ -1,5 +1,5 @@
 dev: true # TODO: compress code when dev is set to false
-#debug: true
+# debug: true
 relative_paths: true
 
 # Some defaults

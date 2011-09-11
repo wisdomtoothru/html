@@ -15,4 +15,33 @@
 	.b-page_homepage .b-page-content {
 		margin-top: 37px;
 		}
-	
+
+/* Articles
+---------------------------------------*/
+.b-page_articles {
+	}
+	.b-page_articles .b-header_big {
+		position: relative;
+		left: -15px;
+
+		width: 70%;
+		margin-left: 25%;
+		margin-bottom: 18px;
+		}
+		.b-page_articles .b-col_middle .b-snippet {
+			margin: 0 0 38px -15px;
+			}
+		.b-page_articles .b-col_middle .b-snippet-figure {
+			margin: 0 -20px 0 0;
+			}
+	.b-page_articles .b-page-content .b-col_tight .b-menu {
+		margin-top: -4px;
+		}
+		.b-page_articles .b-page-content .b-col_tight .b-menu-item-in {
+			display: block;
+
+			margin-right: -14px;
+			}
+	.b-page_articles .b-page-content .b-ad {
+		margin-bottom: 24px;
+		}
