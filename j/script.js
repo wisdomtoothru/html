@@ -2,6 +2,12 @@
 document.documentElement.id = "js"; 
 
 (function(){
+	var isOldIE = ($.browser.msie && parseInt($.browser.version,10) < 8),
+		isAniPhone = navigator.userAgent.indexOf("iPhone") != -1,
+		isAniPod = navigator.userAgent.indexOf("iPod") != -1,
+		isAniPad = navigator.userAgent.indexOf("iPad") != -1,
+		isAnIOS = isAniPhone || isAniPad || isAniPod,
+
 	// Boyans
 	$('.b-boyan-item').hover(function() {
 		if (!$(this).hasClass('b-boyan-item_current')) {
@@ -30,6 +36,16 @@ document.documentElement.id = "js";
 			return false;
 		}
 	});
+	
+	// Fixes for iOS
+	if (isAnIOS) {
+		// Pervent tap for noncurrent elements
+		$('.b-boyan-item').click(function() {
+			if (!$(this).hasClass('b-boyan-item_current')) {
+				return false;
+			}
+		}
+	}
 
 	// Init Boyans (maybe add random?)
 	$('.b-boyan').each(function() {
