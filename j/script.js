@@ -11,6 +11,8 @@ document.documentElement.id = "js";
 	// Boyans
 	$('.b-boyan-item').hover(function() {
 		if (!$(this).hasClass('b-boyan-item_current')) {
+			$(this).addClass('b-boyan-item_current').siblings('.b-boyan-item_current').removeClass('b-boyan-item_current');
+
 			var step = parseInt(500/($(this).parent().children().length-1),10)/10;
 			if ($(this).index()!=$(this).parent().children().length-1) {
 				$(this).closest('.b-boyan').removeClass('b-boyan_noshadow');
@@ -28,7 +30,6 @@ document.documentElement.id = "js";
 			$(this).animate({
 				left: $(this).index()*step + '%'
 			}, { queue: false, duration: 300, complete: function() {
-				$(this).addClass('b-boyan-item_current').siblings('.b-boyan-item_current').removeClass('b-boyan-item_current');
 				if ($(this).index()==$(this).parent().children().length-1) {
 					$(this).closest('.b-boyan').addClass('b-boyan_noshadow');
 				}
