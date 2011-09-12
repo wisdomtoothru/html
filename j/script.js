@@ -44,7 +44,7 @@ document.documentElement.id = "js";
 			if (!$(this).hasClass('b-boyan-item_current')) {
 				return false;
 			}
-		}
+		});
 	}
 
 	// Init Boyans (maybe add random?)
