@@ -6,7 +6,7 @@ document.documentElement.id = "js";
 		isAniPhone = navigator.userAgent.indexOf("iPhone") != -1,
 		isAniPod = navigator.userAgent.indexOf("iPod") != -1,
 		isAniPad = navigator.userAgent.indexOf("iPad") != -1,
-		isAnIOS = isAniPhone || isAniPad || isAniPod,
+		isAnIOS = isAniPhone || isAniPad || isAniPod;
 
 	// Boyans
 	$('.b-boyan-item').hover(function() {
