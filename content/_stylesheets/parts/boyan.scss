@@ -30,21 +30,9 @@
 		
 		margin-right: -100%;
 		}
-		.b-boyan-item:after {
-			content: "";
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			}
 	.b-boyan-item_current {
 		cursor: default;
 		}
-		.b-boyan-item_current:after {
-			display: none;
-			}
-		
 		.b-boyan-item:first-child {
 			margin-left: 0;
 			}
