@@ -61,8 +61,18 @@
 			
 			color: #FFF;
 
-			background: #006ABF;
+			background: #00BF81;
+			
+			-webkit-transition: background .3s ease;
+			   -moz-transition: background .3s ease;
+			     -o-transition: background .3s ease;
+			        transition: background .3s ease;
+			
 			}
+			.b-boyan-item_current .b-boyan-tab {
+				background: #006ABF;
+				}
+			
 			.b-boyan-tab:before,
 			.b-boyan-tab:after {
 				content: "";
@@ -94,10 +104,6 @@
 			            transform: skew(16deg);
 				}
 
-			.b-boyan-item_v2 .b-boyan-tab {
-				background: #00BF81;
-				}
-			
 		.b-boyan-item .b-snippet {
 			padding: 10px 14px 22px;
 			border: 3px solid #E1F6FF;
