@@ -30,7 +30,7 @@ document.documentElement.id = "js";
 			$(this).animate({
 				left: $(this).index()*step + '%'
 			}, { queue: false, duration: 300, complete: function() {
-				if ($(this).index()==$(this).parent().children().length-1) {
+				if ($(this).index()==$(this).parent().children().length-1 && $(this).hasClass('b-boyan-item_current')) {
 					$(this).closest('.b-boyan').addClass('b-boyan_noshadow');
 				}
 			}});
