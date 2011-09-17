@@ -5,6 +5,10 @@
 .b-text H1,
 .b-text H2,
 .b-text H3 {
+	clear: both;
+	
+	margin-bottom: 12px;
+	
 	color: #1181C9;
 	}
 .b-text_ad H1,
@@ -37,7 +41,8 @@
 /* Basic margins */
 .b-text P,
 .b-text UL,
-.b-text OL {
+.b-text OL,
+.b-text FIGURE {
 	margin-bottom: .5em;
 	}
 
@@ -125,7 +130,63 @@
 	color: #666;
 */	}
 
-
+/* Extras */
 .b-text .t-indented {
 	padding-left: 1.5em;
+	}
+.b-text .t-indented-near {
+	overflow: hidden;
+	}
+
+.b-text .t-left,
+.b-text .t-right {
+	width: 250px;
+	max-width: 47.5%;
+	
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	}
+
+.b-text .t-left {
+	float: left;
+	clear: left;
+	padding: 0 1em 1em 0;
+	}
+.b-text .t-right {
+	float: right;
+	clear: right;
+	padding: 0 0 1em 1em;
+	}
+	.b-text .t-left IMG,
+	.b-text .t-right IMG {
+		margin: 0;
+		}
+	
+
+/* Figures */
+.b-text FIGURE {
+	display: block;
+	}
+	.b-text FIGURE IMG {
+		max-width: 100%;
+		}
+	.b-text FIGCAPTION {
+		font-size: 12px;
+		font-style: italic;
+		color: #6D9BB3;
+		}
+		.b-text FIGCAPTION HEADER {
+			font-size: 16px;
+			margin-bottom: .5em;
+
+			color: #87C2E0;
+			}
+
+.b-text A:link {
+	color: #006FBA;
+	}
+.b-text A:visited {
+	color: #66A9D6;
+	color: rgba(0,111,186,.8);
 	}

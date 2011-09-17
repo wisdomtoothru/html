@@ -1,24 +1,33 @@
 /* Article
 ---------------------------------------*/
 .b-article {
-	
+	width: 55%;	
 	}
-	.b-article .b-header,
-	.b-article .b-article-meta,
-	.b-article H1,
-	.b-article H2,
-	.b-article H3 {
-		margin-left: -15px;
-		}
 	.b-article-meta {
-		margin-top: .5em;
+		margin: .5em 0;
 
 		font-size: 1.6em;
 
 		color: #86C2E0;
 		}
+	.b-article .b-header,
+	.b-article .b-article-meta,
+	.b-article H1,
+	.b-article H2,
+	.b-article H3,
+	.b-article FIGURE IMG {
+		margin-left: -15px;
+		}
 	.b-article-text {
 		font-size: 1.6em;
 		line-height: 1.4375;
+		}
+	.b-article-intro {
+		margin-bottom: .5em;
+		font-weight: bold;
+		}
+	.b-article-intro STRONG,
+	.b-article-intro B {
+		font-weight: normal;
 		}
 	
