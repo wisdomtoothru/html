@@ -58,11 +58,15 @@
 		.b-page-extranav .b-link {
 			color: #000;
 			}
-	.b-page-search {
+	.b-page-header .b-search {
 		position: absolute;
 		top: 30px;
 		left: 70%;
+		margin-left: -18px;
 		}
+		.b-page-header .b-search-submit {
+			margin-right: -18px;
+			}
 		
 	
 /* Footer

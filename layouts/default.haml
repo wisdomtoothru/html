@@ -34,10 +34,15 @@
                 %a.b-menu-item-in{:href => "#lol"} Скорая помощь
               %li.b-menu-item><
                 %a.b-menu-item-in{:href => "#lol"} Словарь терминов
-          .b-page-search.b-col.b-col_narrow>
-            Поиск
-          .b-page-extranav.b-col.b-col_narrow>
-            %a.b-link{:href => "#lol"} Специалистам
+          %form.b-search.b-col.b-col_narrow{:action => ""}>
+            %input.b-search-submit{:type => "submit", :value => "Найти"}
+            %span.b-search-in
+              %input.b-search-input{:type => "search", :placeholder => "поиск"}
+            
+          /
+            Отключено пока не дошли до этого этапа
+            .b-page-extranav.b-col.b-col_narrow>
+              %a.b-link{:href => "#lol"} Специалистам
           .b-page-likes.b-col.b-col_half_padded>
             Facebook, Tweet, Vkontakte
             

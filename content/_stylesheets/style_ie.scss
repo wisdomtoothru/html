@@ -2,6 +2,7 @@
 @import "parts/menus_ie.scss";
 @import "parts/ads_ie.scss";
 @import "parts/layouts_ie.scss";
+@import "parts/search_ie.scss";
 '
   @imports.gsub!('.scss','.css') if @config[:debug]
 %>
