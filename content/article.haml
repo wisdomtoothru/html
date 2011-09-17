@@ -4,7 +4,7 @@ page_id: "article"
 ---
 
 .b-page-content.b-cols
-  .b-article.b-col.b-col_middle>
+  %article.b-article.b-col.b-col_middle>
     %h1.b-header.b-header_big
       Заголовок 1 уровня
     .b-article-meta
@@ -45,11 +45,49 @@ page_id: "article"
       %figure.t-left
         %img{:src => "http://placekitten.com/250/169", :alt => ""}
       %p.t-indented-near Керамические брекеты обладают хорошими эстетическими свойствами, за счет чего очень популярны. Но имеют несколько относительных минусов: увеличение сроков лечения, за счет большей силы трения между дугой и пазом брекета, поломка, сколы брекетов или возможность неприятных ощущений при снятии брекетов, а также они дороже и больше по размеру, чем металлические.
+    %aside
+      %h2.b-header.b-header_middle.b-header_v2 Похожие статьи
+      %ul.b-snippets
+        %li.b-snippet
+          %h3.b-header
+            %a.b-link{:href => "#lol"}<
+              Что нужно знать про металлокерамические коронки — максимум из четырех строк
+          %ul.b-snippet-meta
+            %li.b-snippet-meta-item
+              15 cентября 2010
+            %li.b-snippet-meta-item
+              %a.b-link.b-link_comments{:href => "#lol"}
+                18 комментариев
+        %li.b-snippet
+          %h3.b-header
+            %a.b-link{:href => "#lol"}<
+              Компьютерные системы в функциональном и эстетическом протезировании
+          %ul.b-snippet-meta
+            %li.b-snippet-meta-item
+              2 марта 2010
+            %li.b-snippet-meta-item
+              %a.b-link.b-link_comments{:href => "#lol"}
+                1 комментарий
+        %li.b-snippet
+          %h3.b-header
+            %a.b-link{:href => "#lol"}<
+              Что нужно знать про металлокерамические коронки — максимум из четырех строк
+          %ul.b-snippet-meta
+            %li.b-snippet-meta-item
+              4 октября 2009
+            %li.b-snippet-meta-item
+              %a.b-link.b-link_comments{:href => "#lol"}
+                нет комментариев
       
-      
-      
+      %h2.b-header.b-header_middle.b-header_v2
+        Комментарии
+        %sup 42
+      %h2.b-header.b-header_middle.b-header_v2
+        Комментарии Вконтакте
+        
+        
 
-  .b-page-sidebar.b-col.b-col_tight>
+  %aside.b-page-sidebar.b-col.b-col_tight>
     %ul.b-menu.b-menu_v<
       %li.b-menu-item.b-menu-item_current><
         %a.b-menu-item-in{:href => "#lol"} Профилактика заболеваний

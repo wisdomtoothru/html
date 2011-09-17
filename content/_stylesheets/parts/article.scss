@@ -12,6 +12,7 @@
 		}
 	.b-article .b-header,
 	.b-article .b-article-meta,
+	.b-article .b-snippet-meta,
 	.b-article H1,
 	.b-article H2,
 	.b-article H3,
@@ -22,6 +23,13 @@
 		font-size: 1.6em;
 		line-height: 1.4375;
 		}
+		.b-article-text:after {
+			content: "";
+			display: table;
+			clear: both;
+			width: 100%;
+			}
+		
 	.b-article-intro {
 		margin-bottom: .5em;
 		font-weight: bold;
@@ -29,5 +37,8 @@
 	.b-article-intro STRONG,
 	.b-article-intro B {
 		font-weight: normal;
+		}
+	.b-article .b-snippets {
+		margin: 2em 0 3em;
 		}
 	
