@@ -20,6 +20,9 @@
 ---------------------------------------*/
 .b-page_articles {
 	}
+	.b-page_articles .b-page-sidebar {
+		padding-top: 0;
+		}
 	.b-page_articles .b-header_big {
 		position: relative;
 		left: -15px;
@@ -33,14 +36,6 @@
 			}
 		.b-page_articles .b-col_middle .b-snippet-figure {
 			margin: 0 -20px 0 0;
-			}
-	.b-page_articles .b-page-content .b-col_tight .b-menu {
-		margin-top: -4px;
-		}
-		.b-page_articles .b-page-content .b-col_tight .b-menu-item-in {
-			display: block;
-
-			margin-right: -14px;
 			}
 	.b-page_articles .b-page-content .b-ad {
 		margin-bottom: 24px;

@@ -67,7 +67,21 @@
 		.b-page-header .b-search-submit {
 			margin-right: -18px;
 			}
-		
+/* Sidebar */
+.b-page-sidebar {
+	float: left;
+	padding-top: 7.2em;
+	}
+	.b-page-sidebar .b-menu {
+		margin-top: -4px;
+		}
+		.b-page-sidebar .b-menu-item-in {
+			display: block;
+
+			margin-right: -14px;
+			margin-left: -14px;
+			}
+
 	
 /* Footer
 ---------------------------------------*/
