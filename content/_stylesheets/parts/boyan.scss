@@ -30,9 +30,15 @@
 		
 		margin-right: -100%;
 		}
+		.b-boyan-item .b-link {
+			text-decoration: none;
+			}
 	.b-boyan-item_current {
 		cursor: default;
 		}
+		.b-boyan-item_current .b-link {
+			text-decoration: underline;
+			}
 		.b-boyan-item:first-child {
 			margin-left: 0;
 			}
