@@ -80,30 +80,42 @@
 	counter-increment:sub_list_item;
 	}
 
-.b-text OL LI {
-/*	padding: 0 0 0.9em;
-	margin: 0 0 0 2em;
-*/	}
 .b-text DD {
-/*	padding: 0 0 0.9em 2em;
-*/	}
+	padding: 0 0 0.5em 1.375em;
+	}
 
 /* Tables */
 .b-text TABLE {
-/*	width: 100%;
-	margin-bottom: 1.5em;
-*/	}
+	font-size: 12px;
+	width: 100%;
+	margin-bottom: .5em;
+	}
+	.b-text THEAD {
+		color: #22B583;
+		}
+	.b-text THEAD TD {
+		width: 2em;
+		padding: 0;
+		}
 	.b-text TH {
-/*		padding: 0 0 1em;
-
-		text-align: left;
-
 		font-weight: normal;
-*/		}
-	.b-text TD {
-/*		width: 50%;
+		text-align: left;
+		vertical-align: top;
+		padding: 0.4em 0;
+		}
+	.b-text TH[rowspan],
+	.b-text TH[colspan] {
 		font-weight: bold;
-*/		}
+		padding: 0;
+		}
+	.b-text TH[colspan] {
+		border-bottom: 1px solid;
+		}
+	.b-text TD {
+		padding: 0.4em 0;
+		text-align: left;
+		vertical-align: top;
+		}
 
 /* Blockquotes */
 .b-text BLOCKQUOTE {
@@ -112,3 +124,8 @@
 	font-style: italic;
 	color: #666;
 */	}
+
+
+.b-text .t-indented {
+	padding-left: 1.5em;
+	}
