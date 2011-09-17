@@ -1,4 +1,7 @@
 - @page_id = "b-page_" + @item[:page_id] if @item[:page_id]
+- @prefix = ''
+- (item.reps[0].path.gsub(/[^\/]/,'').length-1).times do
+  - @prefix+='../'
 !!! 5
 %html#nojs.b-page{:class => @page_id}
   %head
@@ -18,7 +21,7 @@
           %nav.b-page-nav.b-col.b-col_half_padded>
             %ul.b-menu.b-menu_v<
               %li.b-menu-item><
-                %a.b-menu-item-in{:href => "#lol"} Статьи
+                %a.b-menu-item-in{:href => @prefix + "articles/"} Статьи
               %li.b-menu-item><
                 %a.b-menu-item-in{:href => "#lol"} Видео
             %ul.b-menu.b-menu_v<
