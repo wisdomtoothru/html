@@ -430,7 +430,8 @@ button.b-button_v2:hover {
   min-height: 100%; }
 
 .b-cols {
-  position: relative; }
+  position: relative;
+  clear: both; }
 
 .b-cols_stretch {
   visibility: hidden; }
@@ -662,10 +663,27 @@ button.b-button_v2:hover {
 .b-page-extranav .b-link {
   color: #000; }
 
-.b-page-search {
+.b-page-header .b-search {
   position: absolute;
   top: 30px;
-  left: 70%; }
+  left: 70%;
+  margin-left: -18px; }
+
+.b-page-header .b-search-submit {
+  margin-right: -18px; }
+
+/* Sidebar */
+.b-page-sidebar {
+  float: left;
+  padding-top: 7.2em; }
+
+.b-page-sidebar .b-menu {
+  margin-top: -4px; }
+
+.b-page-sidebar .b-menu-item-in {
+  display: block;
+  margin-right: -14px;
+  margin-left: -14px; }
 
 /* Footer
 ---------------------------------------*/
@@ -843,6 +861,161 @@ button.b-button_v2:hover {
 A.b-link_footnote:hover {
   text-decoration: underline; }
 
+.b-search {
+  padding-top: 5px;
+  font-size: 1.2em; }
+
+.b-search-submit {
+  float: right; }
+
+.b-search-in {
+  display: block;
+  overflow: hidden;
+  padding-right: 6px; }
+
+.b-search-input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Text
+---------------------------------------*/
+/* Headers */
+.b-text H1,
+.b-text H2,
+.b-text H3 {
+  color: #1181C9; }
+
+.b-text_ad H1,
+.b-text_ad H2,
+.b-text_ad H3 {
+  color: #22B583; }
+
+.b-text H1 {
+  font: 3em/1.125em Georgia, serif; }
+
+.b-text H2 {
+  font: 1.875em/1.238em Georgia, serif; }
+
+.b-text H3 {
+  font: 1.313em/1.238em Georgia, serif; }
+
+.b-text H4 {
+  font: bold 1em/1.238em Arial, sans-serif;
+  margin-bottom: .5em; }
+
+.b-text H5 {
+  font: bold 0.8em/1.238em Arial, sans-serif;
+  margin-bottom: .5em; }
+
+.b-text H6 {
+  font: bold 0.7em/1.238em Arial, sans-serif;
+  margin-bottom: .5em; }
+
+/* Basic margins */
+.b-text P,
+.b-text UL,
+.b-text OL {
+  margin-bottom: .5em; }
+
+/* Lists */
+.b-text LI {
+  padding: 0 0 .5em 1.375em;
+  display: block; }
+
+.b-text LI:before {
+  content: "—";
+  float: left;
+  width: 1.375em;
+  margin-left: -1.375em;
+  color: #22B583; }
+
+.b-text OL {
+  counter-reset: list_item; }
+
+.b-text OL OL {
+  counter-reset: sub_list_item; }
+
+.b-text OL > LI:before {
+  content: counter(list_item) ".";
+  counter-increment: list_item;
+  width: 1.125em;
+  padding: 0 0 0 .25em; }
+
+.b-text OL OL > LI {
+  padding-left: 2.25em; }
+
+.b-text OL OL > LI:before {
+  width: 2em;
+  margin-left: -2.25em;
+  content: counter(list_item) "." counter(sub_list_item) ".";
+  counter-increment: sub_list_item; }
+
+.b-text DD {
+  padding: 0 0 0.5em 1.375em; }
+
+/* Tables */
+.b-text TABLE {
+  font-size: 12px;
+  width: 100%;
+  margin-bottom: .5em; }
+
+.b-text THEAD {
+  color: #22B583; }
+
+.b-text THEAD TD {
+  width: 2em;
+  padding: 0; }
+
+.b-text TH {
+  font-weight: normal;
+  text-align: left;
+  vertical-align: top;
+  padding: 0.4em 0; }
+
+.b-text TH[rowspan],
+.b-text TH[colspan] {
+  font-weight: bold;
+  padding: 0; }
+
+.b-text TH[colspan] {
+  border-bottom: 1px solid; }
+
+.b-text TD {
+  padding: 0.4em 0;
+  text-align: left;
+  vertical-align: top; }
+
+/* Blockquotes */
+.b-text BLOCKQUOTE {
+  /*	margin-bottom: 0.5em;
+  
+  	font-style: italic;
+  	color: #666;
+  */ }
+
+.b-text .t-indented {
+  padding-left: 1.5em; }
+
+/* Article
+---------------------------------------*/
+.b-article .b-header,
+.b-article .b-article-meta,
+.b-article H1,
+.b-article H2,
+.b-article H3 {
+  margin-left: -15px; }
+
+.b-article-meta {
+  margin-top: .5em;
+  font-size: 1.6em;
+  color: #86C2E0; }
+
+.b-article-text {
+  font-size: 1.6em;
+  line-height: 1.4375; }
+
 /* Homepage
 ---------------------------------------*/
 .b-page_homepage .b-col_narrow .b-ad {
@@ -860,6 +1033,9 @@ A.b-link_footnote:hover {
 
 /* Articles
 ---------------------------------------*/
+.b-page_articles .b-page-sidebar {
+  padding-top: 0; }
+
 .b-page_articles .b-header_big {
   position: relative;
   left: -15px;
@@ -872,13 +1048,6 @@ A.b-link_footnote:hover {
 
 .b-page_articles .b-col_middle .b-snippet-figure {
   margin: 0 -20px 0 0; }
-
-.b-page_articles .b-page-content .b-col_tight .b-menu {
-  margin-top: -4px; }
-
-.b-page_articles .b-page-content .b-col_tight .b-menu-item-in {
-  display: block;
-  margin-right: -14px; }
 
 .b-page_articles .b-page-content .b-ad {
   margin-bottom: 24px; }

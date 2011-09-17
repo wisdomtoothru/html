@@ -10,3 +10,6 @@
 .b-col {
   display: inline;
   zoom: 1; }
+
+.b-search-in {
+  padding-right: 12px; }
