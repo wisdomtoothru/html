@@ -16,10 +16,14 @@
   </head>
   <body>
     <div class="hb-page">
-      <div class='hb-table' style='width: 50%;'>
+      <div class='hb-table-cancel' id='Cancel'></div>
+      <div class='hb-table' id='snippets' style='width: 50%;'>
         <table class='hb-table-in'>
           <caption class='hb-table-caption'>
-            Сниппеты постов
+            <a class='hb-table-caption-link' href='#snippets'>
+              Сниппеты постов
+            </a>
+            <a class='hb-table-caption-reset' href='#Cancel'></a>
           </caption>
           <tbody class='hb-table-section'>
             <tr class='hb-table-row'>
@@ -161,10 +165,14 @@
           </tbody>
         </table>
       </div>
-      <div class='hb-table' style='width: 40%;'>
+      <div class='hb-table-cancel' id='Cancel'></div>
+      <div class='hb-table' id='terms' style='width: 40%;'>
         <table class='hb-table-in'>
           <caption class='hb-table-caption'>
-            Термины
+            <a class='hb-table-caption-link' href='#terms'>
+              Термины
+            </a>
+            <a class='hb-table-caption-reset' href='#Cancel'></a>
           </caption>
           <tbody class='hb-table-section'>
             <tr class='hb-table-row'>
@@ -220,10 +228,14 @@
           </tbody>
         </table>
       </div>
-      <div class='hb-table'>
+      <div class='hb-table-cancel' id='Cancel'></div>
+      <div class='hb-table' id='footnotes'>
         <table class='hb-table-in'>
           <caption class='hb-table-caption'>
-            Сноски
+            <a class='hb-table-caption-link' href='#footnotes'>
+              Сноски
+            </a>
+            <a class='hb-table-caption-reset' href='#Cancel'></a>
           </caption>
           <tbody class='hb-table-section'>
             <tr class='hb-table-row'>
@@ -275,10 +287,14 @@
           </tbody>
         </table>
       </div>
-      <div class='hb-table' style='width: 50%;'>
+      <div class='hb-table-cancel' id='Cancel'></div>
+      <div class='hb-table' id='text' style='width: 50%;'>
         <table class='hb-table-in'>
           <caption class='hb-table-caption'>
-            Текстовые блоки
+            <a class='hb-table-caption-link' href='#text'>
+              Текстовые блоки
+            </a>
+            <a class='hb-table-caption-reset' href='#Cancel'></a>
           </caption>
           <tbody class='hb-table-section'>
             <tr class='hb-table-row'>
@@ -430,13 +446,40 @@
                 </div>
               </td>
             </tr>
+            <tr class='hb-table-row'>
+              <th class='hb-table-cell'>
+                <div class='hb-table-cell-in'>
+                   Иллюстрации
+                </div>
+              </th>
+              <td class='hb-table-cell'>
+                <div class='hb-table-cell-in'>
+                  <div class='b-article-text b-text'>
+                    <figure>
+                      <img alt='' src='http://placekitten.com/489/241' />
+                    </figure>
+                    <figure>
+                      <img alt='' src='http://placekitten.com/450/382' />
+                      <figcaption>
+                        <header>Устройство челюсти человека</header>
+                        1 малая берцовая кость; 2 зуб; 3 еще зуб; 5 резец; 6 зубец; 7 коронка;8 впадинка; 9 что-то еще
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
-      <div class='hb-table'>
+      <div class='hb-table-cancel' id='Cancel'></div>
+      <div class='hb-table' id='menus'>
         <table class='hb-table-in'>
           <caption class='hb-table-caption'>
-            Меню
+            <a class='hb-table-caption-link' href='#menus'>
+              Меню
+            </a>
+            <a class='hb-table-caption-reset' href='#Cancel'></a>
           </caption>
           <tbody class='hb-table-section'>
             <tr class='hb-table-row'>
@@ -506,10 +549,14 @@
           </tbody>
         </table>
       </div>
-      <div class='hb-table'>
+      <div class='hb-table-cancel' id='Cancel'></div>
+      <div class='hb-table' id='buttons'>
         <table class='hb-table-in'>
           <caption class='hb-table-caption'>
-            Кнопки
+            <a class='hb-table-caption-link' href='#buttons'>
+              Кнопки
+            </a>
+            <a class='hb-table-caption-reset' href='#Cancel'></a>
           </caption>
           <tbody class='hb-table-section'>
             <tr class='hb-table-row'>
@@ -551,10 +598,14 @@
           </tbody>
         </table>
       </div>
-      <div class='hb-table' style='font-size: 16px;'>
+      <div class='hb-table-cancel' id='Cancel'></div>
+      <div class='hb-table' id='links' style='font-size: 16px;'>
         <table class='hb-table-in'>
           <caption class='hb-table-caption'>
-            Ссылки
+            <a class='hb-table-caption-link' href='#links'>
+              Ссылки
+            </a>
+            <a class='hb-table-caption-reset' href='#Cancel'></a>
           </caption>
           <tbody class='hb-table-section'>
             <tr class='hb-table-row'>
@@ -669,10 +720,14 @@
           </tbody>
         </table>
       </div>
-      <div class='hb-table' style='width: 300px;'>
+      <div class='hb-table-cancel' id='Cancel'></div>
+      <div class='hb-table' id='search' style='width: 300px;'>
         <table class='hb-table-in'>
           <caption class='hb-table-caption'>
-            Поиск
+            <a class='hb-table-caption-link' href='#search'>
+              Поиск
+            </a>
+            <a class='hb-table-caption-reset' href='#Cancel'></a>
           </caption>
           <tbody class='hb-table-section'>
             <tr class='hb-table-row'>
@@ -695,10 +750,14 @@
           </tbody>
         </table>
       </div>
-      <div class='hb-table'>
+      <div class='hb-table-cancel' id='Cancel'></div>
+      <div class='hb-table' id='icons'>
         <table class='hb-table-in'>
           <caption class='hb-table-caption'>
-            Иконки
+            <a class='hb-table-caption-link' href='#icons'>
+              Иконки
+            </a>
+            <a class='hb-table-caption-reset' href='#Cancel'></a>
           </caption>
           <tbody class='hb-table-section'>
             <tr class='hb-table-row'>
@@ -719,10 +778,14 @@
           </tbody>
         </table>
       </div>
-      <div class='hb-table' style='width: 40%;'>
+      <div class='hb-table-cancel' id='Cancel'></div>
+      <div class='hb-table' id='tools' style='width: 40%;'>
         <table class='hb-table-in'>
           <caption class='hb-table-caption'>
-            Блоки с инструментами
+            <a class='hb-table-caption-link' href='#tools'>
+              Блоки с инструментами
+            </a>
+            <a class='hb-table-caption-reset' href='#Cancel'></a>
           </caption>
           <tbody class='hb-table-section'>
             <tr class='hb-table-row'>
@@ -771,10 +834,14 @@
           </tbody>
         </table>
       </div>
-      <div class='hb-table'>
+      <div class='hb-table-cancel' id='Cancel'></div>
+      <div class='hb-table' id='headers'>
         <table class='hb-table-in'>
           <caption class='hb-table-caption'>
-            Заголовки
+            <a class='hb-table-caption-link' href='#headers'>
+              Заголовки
+            </a>
+            <a class='hb-table-caption-reset' href='#Cancel'></a>
           </caption>
           <tbody class='hb-table-section'>
             <tr class='hb-table-row'>
@@ -913,10 +980,14 @@
           </tbody>
         </table>
       </div>
-      <div class='hb-table'>
+      <div class='hb-table-cancel' id='Cancel'></div>
+      <div class='hb-table' id='ads'>
         <table class='hb-table-in'>
           <caption class='hb-table-caption'>
-            Реклама
+            <a class='hb-table-caption-link' href='#ads'>
+              Реклама
+            </a>
+            <a class='hb-table-caption-reset' href='#Cancel'></a>
           </caption>
           <tbody class='hb-table-section'>
             <tr class='hb-table-row'>
