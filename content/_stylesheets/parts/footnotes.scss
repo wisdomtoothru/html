@@ -1,0 +1,67 @@
+/* Footnotes
+---------------------------------------*/
+.b-footnotes {
+	margin: 2.4em 0 0;
+	}
+	.b-footnotes-in {
+		position: relative;
+		z-index: 9;
+	
+		display: inline-block;
+
+		max-width: 100%;
+		padding: 2px 0 0;
+		border-top: 1px solid;
+
+		color: #22B583;
+		}
+
+.b-footnote {
+	position: relative;
+	white-space: nowrap;
+	-webkit-transition: background 1.4s cubic-bezier(.96,0,.5,.5);
+	   -moz-transition: background 1.4s cubic-bezier(.96,0,.5,.5);
+	     -o-transition: background 1.4s cubic-bezier(.96,0,.5,.5);
+	        transition: background 1.4s cubic-bezier(.96,0,.5,.5);
+	
+	}
+	.b-footnote:target {
+		background: #FFF;
+		}
+	
+	.b-footnote:target:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+
+		width: 100%;
+		height: 100%;
+
+		background: #FF0;
+		}
+	
+	.b-footnote-mark {
+		display: inline-block;
+
+		font: 1.8em/1 Georgia, serif;
+		}
+	.b-footnote-content {
+		display: inline-block;
+		white-space: normal;
+
+		font-size: 1.4em;
+		}
+
+.b-link_footnote {
+	position: relative;
+	text-decoration: none;
+	margin: 0 0 0 .2em;
+	}
+.b-link_footnote:before {
+	display: none;
+	}
+A.b-link_footnote:hover {
+	text-decoration: underline;
+	}
