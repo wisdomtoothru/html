@@ -1,10 +1,13 @@
 - blockies = item.children
-
 - blockies.each do |blockie|
-  .hb-table{:style=>blockie[:style]}
+- @identifier = blockie.identifier.gsub(/HelloBlockies|[^\w\d]/,'')
+  .hb-table-cancel#Cancel
+  .hb-table{:style=>blockie[:style], :id => @identifier}
     %table.hb-table-in
       %caption.hb-table-caption
-        =blockie[:title]
+        %a.hb-table-caption-link{:href => "#" + @identifier}
+          =blockie[:title]
+        %a.hb-table-caption-reset{:href => "#Cancel"}
       %tbody.hb-table-section
         - blockie.compiled_content.split(/(?=\n<!--)/).each do |blockieSubItem|
           %tr.hb-table-row
