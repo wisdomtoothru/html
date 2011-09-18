@@ -1,0 +1,64 @@
+/* Comments
+---------------------------------------*/
+
+.b-comments {
+	
+	}
+.b-comment {
+	position: relative;
+	
+	margin-top: 2em;
+	}
+	.b-comment:after {
+		content: "";
+		display: table;
+		clear: both;
+		width: 100%;
+		}
+	.b-comment-meta {
+		margin: 0 0 .5em;
+
+		font-size: 1.3em;
+		}
+	.b-comment-author {
+		font-size: 1.23em;
+		font-weight: bold;
+		
+		color: #86C2E0;
+		}
+	.b-comment-content {
+		font-size: 1.6em;
+		}
+
+.b-comment_special {
+	padding: 1.4em 9%;
+	border: 3px solid #E1F6FF;
+	margin: 1em 19px 0 0;
+	
+	-webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+	        border-radius: 6px;
+	}
+	.b-article .b-comment_special {
+		margin-left: -15px;
+		}
+	.b-comment_special:before,
+	.b-comment_special_before {
+		content: "";
+		
+		position: absolute;
+		top: 16px;
+		right: -18px;
+
+		width: 18px;
+		height: 19px;
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAATCAYAAACdkl3yAAABLklEQVR42sWUPU7EMBBG9wBUNNSIhp6GI9DQUNNyAq7AATgMR0CiRDRcYFnIkv0DkcR2Yj/sSNYosqKQbIGlkew488bfjMezeclxNGA21fYGWcdJrlgFENHGQrTlOqtQK818EsjB0c7wFP2KhvtRoMZxvjU8Lypc9AlzB4ddUKr/VFluvwyPmaKUf8U8+KVN9qeSj981DxvD61JRSNR+e/PWOM5aUNHIxrBjdx3yRCw/QK4Tp6ifcGIvDWXho5I9P9cODjoggLJpI/BTg7ZgHXG060x1T2YsV50LycAQ6QLxQe8EMgCqHax1Cgl3JjgOgpSFjUnzFcrv4Re9vRadQ/SFJDOpjiS2B6Rsf7lzzVJbbv7U/WudSKjCTTaOy1HPyLvIIfTS1Pco6bV/B/0CGLaPm2TS9lAAAAAASUVORK5CYII=) 0 0 no-repeat;
+		}
+	
+	.b-comment_special .b-comment-meta,
+	.b-comment_special .b-comment-content {
+		padding-left: 12px;
+		}
+	.b-comment_special .b-comment-author {
+		color: #22B583;
+		}
