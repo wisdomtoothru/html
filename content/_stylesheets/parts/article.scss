@@ -4,7 +4,7 @@
 	width: 55%;	
 	}
 	.b-article-meta {
-		margin: .5em 0;
+		margin: .75em 0;
 
 		font-size: 1.6em;
 
@@ -13,11 +13,13 @@
 	.b-article .b-header,
 	.b-article .b-article-meta,
 	.b-article .b-snippet-meta,
+	.b-article .b-disclaimer,
+	.b-article .b-comment_special,
 	.b-article H1,
 	.b-article H2,
 	.b-article H3,
 	.b-article FIGURE IMG {
-		margin-left: -15px;
+		margin-left: -15px !important;
 		}
 	.b-article-text {
 		font-size: 1.6em;

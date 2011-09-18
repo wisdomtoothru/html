@@ -2,7 +2,7 @@
 ---------------------------------------*/
 
 .b-comments {
-	
+	margin-bottom: 2.4em;
 	}
 .b-comment {
 	position: relative;
@@ -39,9 +39,6 @@
 	   -moz-border-radius: 6px;
 	        border-radius: 6px;
 	}
-	.b-article .b-comment_special {
-		margin-left: -15px;
-		}
 	.b-comment_special:before,
 	.b-comment_special_before {
 		content: "";
