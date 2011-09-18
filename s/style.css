@@ -736,9 +736,7 @@ button.b-button_v2:hover {
 .b-page-header .b-search-submit {
   margin-right: -18px; }
 
-/* Sidebar */
 .b-page-sidebar {
-  float: left;
   padding-top: 7.2em; }
 
 .b-page-sidebar .b-menu {
@@ -1315,7 +1313,7 @@ A.b-link_footnote:hover {
 
 /* Homepage
 ---------------------------------------*/
-.b-page_homepage .b-col_narrow {
+.b-page_homepage .b-page-content .b-col_narrow {
   text-align: right; }
 
 .b-page_homepage .b-col_narrow .b-ad {
