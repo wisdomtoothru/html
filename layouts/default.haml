@@ -16,8 +16,12 @@
       .b-layout-in
         %header.b-page-header.b-cols
           %h1.b-page-logo.b-col.b-col_tight>
-            %span.b-page-logo-in
-              Зуб мудрости
+            - if @item.identifier == '/'
+              %span.b-page-logo-in
+                Зуб мудрости
+            - else
+              %a.b-page-logo-in{:href => @prefix}
+                Зуб мудрости
           %nav.b-page-nav.b-col.b-col_half_padded>
             %ul.b-menu.b-menu_v<
               %li.b-menu-item><
