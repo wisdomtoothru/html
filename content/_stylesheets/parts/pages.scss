@@ -4,6 +4,8 @@
 	}
 	.b-page_homepage .b-snippet .b-header .b-link {
 		display: block;
+		overflow: hidden;
+		text-overflow: ellipsis;
 		}
 	.b-page_homepage .b-page-content .b-col_narrow {
 		text-align: left;
