@@ -120,3 +120,17 @@
 			margin: -10px -14px 0 0;
 			}
 		
+	/* Non-current item's link colors */
+	.b-boyan-item .b-header .b-link {
+		color: #000;
+		}
+	.b-boyan-item .b-snippet-meta .b-link {
+		color: #86C2E0;
+		}
+	/* Current item's link colors */
+	.b-boyan-item_current .b-header .b-link {
+		color: #1181C9;
+		}
+	.b-boyan-item_current .b-snippet-meta .b-link {
+		color: #00B26B;
+		}
