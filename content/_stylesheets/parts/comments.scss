@@ -21,9 +21,9 @@
 		font-size: 1.3em;
 		}
 	.b-comment-author {
-		font-size: 1.23em;
-		font-weight: bold;
-		
+		font: 1.16em/1.238em Georgia, serif;
+		}
+	SPAN.b-comment-author {
 		color: #86C2E0;
 		}
 	.b-comment-content {
@@ -55,7 +55,4 @@
 	.b-comment_special .b-comment-meta,
 	.b-comment_special .b-comment-content {
 		padding-left: 12px;
-		}
-	.b-comment_special .b-comment-author {
-		color: #22B583;
 		}
