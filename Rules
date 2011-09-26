@@ -23,7 +23,11 @@ compile '/_stylesheets/*' do
   end
 end
 route '/_stylesheets/*/' do
-  '/s/' + item.identifier[14..-2] + '.css'
+  if item[:extension] == 'scss'
+    '/s/' + item.identifier[14..-2] + '.css'
+  elsif item[:extension]
+    '/s/' + item.identifier[14..-2] + '.' + item[:extension] 
+  end
 end
 
 # Javascripts in `j` directory
