@@ -53,4 +53,7 @@ document.documentElement.id = "js";
 		$(this).children('.b-boyan-item:eq(0)').click();
 	})
 	
+	// Focus to the search terms field
+	$('.b-page_terms .b-terms-search .b-search-input').focus();
+	
 })();
