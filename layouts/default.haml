@@ -1,9 +1,9 @@
-- @page_id = "b-page_" + @item[:page_id] if @item[:page_id]
+- @page_type = "b-page_" + @item[:page_type] if @item[:page_type]
 - @prefix = ''
 - (item.reps[0].path.gsub(/[^\/]/,'').length-1).times do
   - @prefix+='../'
 !!! 5
-%html#nojs.b-page{:class => @page_id}
+%html#nojs.b-page{:class => @page_type}
   %head
     = render 'html/head'
     %title<
