@@ -65,3 +65,35 @@ A.b-menu-item-in:visited:hover {
 	content: "/";
 	margin-left: 4px;
 	}
+
+/* Pages menu */
+.b-menu_pages {
+	padding-bottom: 9px;
+	}
+	.b-menu_pages DD.b-menu-item,
+	.b-menu_pages DD.b-menu-item .b-link_w,
+	.b-menu_pages DD.b-menu-item .b-link_w:hover {
+		color: #86C2E0 !important;
+		cursor: default;
+		}
+	.b-menu_pages .b-link-in_extra {
+		font-size: .75em;
+		}
+	.b-menu_pages DD.b-menu-item .b-link:link,
+	.b-menu_pages DD.b-menu-item .b-link:visited {
+		color: #000 !important;
+		cursor: pointer;
+		}
+	.b-menu_pages A.b-link:link:hover .b-link-in,
+	.b-menu_pages A.b-link:visited:hover .b-link-in {
+		color: #E7002D !important;
+		}
+	.b-menu_pages .b-link .b-link-in {
+		text-decoration: none;
+		}
+
+	.b-menu_pages .b-link:link .b-link-in,
+	.b-menu_pages .b-link:visited .b-link-in {
+		text-decoration: underline;
+		color: #22B583 !important;
+		}
