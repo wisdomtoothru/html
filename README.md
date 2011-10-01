@@ -4,6 +4,10 @@
 - [Главная страница](http://wisdomtoothru.github.com/html/)
 - [Список статей](http://wisdomtoothru.github.com/html/articles/)
 - [Отдельная статья](http://wisdomtoothru.github.com/html/article/)
+- [Видео](http://wisdomtoothru.github.com/html/videos/)
+- [Список терминов](http://wisdomtoothru.github.com/html/terms/)
+- [Категория списка терминов](http://wisdomtoothru.github.com/html/terms-sub/)
+- [Отдельный термин](http://wisdomtoothru.github.com/html/term/)
 
 ## Как склонировать именно эту ветку со статикой к себе?
 
