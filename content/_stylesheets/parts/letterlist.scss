@@ -6,21 +6,24 @@
 	list-style: none;
 	}
 	.b-letterlist-item {
-		margin-bottom: 1em;
+		margin-top: .5em;
 		}
 	.b-letterlist-item .b-link {
 		display: inline-block;
-
+		line-height: 1.4em;
+		}
+	
+	.b-letterlist-item_lettered {
+		margin-top: 1em;
+		}
+	.b-letterlist-item_lettered .b-link {
 		border-bottom: 1px solid;
 
 		white-space: nowrap;
 
 		text-decoration: none;
 		
-		line-height: 1.4em;
-		}
-	.b-letterlist-word {
-		display: inline-block;
+		line-height: .9em;
 		}
 	.b-letterlist-char {
 		font-size: 1.5em;
