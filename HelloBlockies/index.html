@@ -8,7 +8,7 @@
     <!-- TODO: build two versions of stylesheets, on for ie and one for others -->
     <link href="../s/style.css" rel="stylesheet" />
     <!--[if IE]>
-      <script src="../s/style_ie.css"></script>
+      <script src="../j/script_ie.js"></script>
       <link href="../s/style_ie.css" rel="stylesheet" />
     <![endif]-->
     <link href="../s/HelloBlockies.css" rel="stylesheet" />
@@ -17,1329 +17,1364 @@
   <body>
     <div class="hb-page">
       <div class='hb-table-cancel' id='Cancel'></div>
-      <div class='hb-table' id='icons'>
-        <table class='hb-table-in'>
-          <caption class='hb-table-caption'>
-            <a class='hb-table-caption-link' href='#icons'>
-              Иконки
-            </a>
-            <a class='hb-table-caption-reset' href='#Cancel'></a>
-          </caption>
-          <tbody class='hb-table-section'>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Внешняя ссылка
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <b class='b-ico b-ico_pseudo b-ico_external'>
-                    <b class='b-ico-i1'></b>
-                    <b class='b-ico-i2'></b>
-                  </b>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Буллит
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <b class='b-ico b-ico_pseudo b-ico_bullet'>•</b>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class='hb-table-cancel' id='Cancel'></div>
-      <div class='hb-table' id='terms' style='width: 40%;'>
-        <table class='hb-table-in'>
-          <caption class='hb-table-caption'>
-            <a class='hb-table-caption-link' href='#terms'>
-              Термины
-            </a>
-            <a class='hb-table-caption-reset' href='#Cancel'></a>
-          </caption>
-          <tbody class='hb-table-section'>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Обычный термин
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <dl class='b-term'>
-                    <dt class='b-header'>
-                      <a class='b-link' href='#lol'>
-                        Абстракция
-                      </a>
-                    </dt>
-                    <dd class='b-term-content'>
-                      <div class='b-term-subheader'>
-                        (лат. название — <dfn class="b-term-latin">аbstractio</dfn>)
-                      </div>
-                      <div class='b-term-text'>
-                        Удаление, отвлечение — диагностический термин по классификации аномалий видов прикуса по Р. Simon, означающий расположение зубного ряда или части его ниже окклюзионной линии. Абстракция определяется по отношению к франкфуртской горизонтали.
-                        (Отступ слева будет задаваться контекстно от положения в раскладке)
-                      </div>
-                    </dd>
-                  </dl>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Большой термин
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <dl class='b-term b-term_big'>
-                    <dt class='b-header b-header_big'>
-                      Абберация
-                    </dt>
-                    <dd class='b-term-content'>
-                      <div class='b-term-text'>
-                        Отклонение от нормы; ошибки, нарушения погрешности (<i>лат</i>. aberratio «уклонение, удаление, отвлечение», от <i>лат</i>. aberrare (<i>лат</i>. ab- «от» + <i>лат</i>. errare «блуждать, заблуждаться») — «удаляться, отклоняться»).
-                      </div>
-                      <a class='b-link b-link_w b-link_back' href='#lol'>←
-                      <span class='b-link-in'>поиск</span></a>
-                    </dd>
-                  </dl>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class='hb-table-cancel' id='Cancel'></div>
-      <div class='hb-table' id='buttons'>
-        <table class='hb-table-in'>
-          <caption class='hb-table-caption'>
-            <a class='hb-table-caption-link' href='#buttons'>
-              Кнопки
-            </a>
-            <a class='hb-table-caption-reset' href='#Cancel'></a>
-          </caption>
-          <tbody class='hb-table-section'>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Кнопка ссылкой
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <a class='b-button' href='#lol'><span class='b-button-in'>Поставить диагноз</span></a>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Вторая версия
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <a class='b-button b-button_v2' href='#lol'><span class='b-button-in'>Подобрать средство</span></a>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Вторая, но кнопкой
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <button class='b-button b-button_v2' type='button'><span class='b-button-in'>Подобрать средство</span></button>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class='hb-table-cancel' id='Cancel'></div>
-      <div class='hb-table' id='incuts' style='width: 50%;'>
-        <table class='hb-table-in'>
-          <caption class='hb-table-caption'>
-            <a class='hb-table-caption-link' href='#incuts'>
-              Врезки с бордерами
-            </a>
-            <a class='hb-table-caption-reset' href='#Cancel'></a>
-          </caption>
-          <tbody class='hb-table-section'>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Просто врезка с заголовком
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <div class='b-incut'>
-                    <div class='b-incut-header'>Качественные брекеты немецкого производства вы сможете приобрести в следующих кликах:</div>
-                    <div class='b-incut-content b-cols'><div class='b-col b-col_half'>
-                        <div class='b-snippet b-snippet_mini'>
-                          <div class='b-snippet-figure'>
-                            <img alt='' class='b-snippet-pic' src='http://placekitten.com/100/100' />
-                          </div>
-                          <div class='b-snippet-content'>
-                            <a class='b-link b-header b-header_minor b-header_v2' href='#lol'>Dental Studio</a>
-                            <div class='b-snippet-meta b-snippet-meta_address'>Москва, Бабушкинский район, Летчика Бабушкина ул., дом 23 (вход со двора)</div>
-                            <div class='b-snippet-meta b-snippet-meta_address'>Метро ст. Бабушкинская, Отрадное, Медведково.</div>
-                            <div class='b-snippet-meta'>
-                              <a class='b-link b-link_w' href='#lol'><b class='b-ico b-ico_pseudo b-ico_external'>
-                                <b class='b-ico-i1'></b>
-                                <b class='b-ico-i2'></b>
-                              </b><span class='b-link-in'>dentalstudio.ru</span></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div><div class='b-col b-col_half'>
-                        <div class='b-snippet b-snippet_mini'>
-                          <div class='b-snippet-figure'>
-                            <img alt='' class='b-snippet-pic' src='http://placekitten.com/100/100' />
-                          </div>
-                          <div class='b-snippet-content'>
-                            <a class='b-link b-header b-header_minor b-header_v2' href='#lol'>А-Дент</a>
-                            <div class='b-snippet-meta b-snippet-meta_address'>Москва, Бабушкинский район, Летчика Бабушкина ул., дом 23 (вход со двора)</div>
-                            <div class='b-snippet-meta b-snippet-meta_address'>Метро ст. Бабушкинская, Отрадное, Медведково.</div>
-                            <div class='b-snippet-meta'>
-                              <a class='b-link b-link_w' href='#lol'><b class='b-ico b-ico_pseudo b-ico_external'>
-                                <b class='b-ico-i1'></b>
-                                <b class='b-ico-i2'></b>
-                              </b><span class='b-link-in'>dentalstudio.ru</span></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div></div>
-                    <a class='b-link b-incut_link' href='#lol'>Полный каталог клиник</a>
+        <div class='hb-table' id='ads'>
+          <table class='hb-table-in'>
+            <caption class='hb-table-caption'>
+              <a class='hb-table-caption-link' href='#ads'>
+                Реклама
+              </a>
+              <a class='hb-table-caption-reset' href='#Cancel'></a>
+            </caption>
+            <tbody class='hb-table-section'>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Большой баннер
                   </div>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Врезка с неравными половинками и разделителем
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <div class='b-incut b-incut_full b-incut b-incut_quirky'>
-                    <div class='b-incut-content'>
-                      <div class='b-incut-item b-snippet b-snippet_mini'>
-                        <div class='b-snippet-figure'>
-                          <img alt='' class='b-snippet-pic' src='http://placekitten.com/100/100' />
-                        </div>
-                        <div class='b-snippet-content'>
-                          <h3 class='b-snippet-header'>Автор статьи</h3>
-                          <a class='b-link b-header' href='#lol'>Константин<br/>Константинопольский</a>
-                          <div class='b-snippet-meta b-snippet-meta_online'>
-                            <div class='b-ico b-ico_pseudo b-ico_bullet'>•</div>
-                            На сайте
-                          </div>
-                          <a class='b-button' href='#lol'><span class='b-button-in'>Задать вопрос</span></a>
-                        </div>
-                      </div>
-                      <div class='b-incut-divider'></div>
-                      <div class='b-incut-item b-snippet b-snippet_mini'>
-                        <h3 class='b-snippet-header'>Автор работает в клинике</h3>
-                        <div class='b-snippet-figure'>
-                          <img alt='' class='b-snippet-pic' src='http://placekitten.com/60/60' />
-                        </div>
-                        <div class='b-snippet-content'>
-                          <a class='b-link b-header b-header_minor b-header_v2' href='#lol'>Dental Tooth Studio</a>
-                          <div class='b-snippet-meta'>(831) 438-02-38</div>
-                          <div class='b-snippet-meta'>(831) 438-02-38</div>
-                          <div class='b-snippet-meta'>
-                            <a class='b-link b-link_w' href='#lol'><b class='b-ico b-ico_pseudo b-ico_external'>
-                              <b class='b-ico-i1'></b>
-                              <b class='b-ico-i2'></b>
-                            </b><span class='b-link-in'>dentalstudio.ru</span></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class='b-incut-helper'></div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class='hb-table-cancel' id='Cancel'></div>
-      <div class='hb-table' id='ads'>
-        <table class='hb-table-in'>
-          <caption class='hb-table-caption'>
-            <a class='hb-table-caption-link' href='#ads'>
-              Реклама
-            </a>
-            <a class='hb-table-caption-reset' href='#Cancel'></a>
-          </caption>
-          <tbody class='hb-table-section'>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Большой баннер
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <div class='b-ad'>
-                    <div class='b-ad-title'>Рекламочка</div>
-                    <div class='b-ad-in'>
-                      <img alt='' class='b-ad-pic' src='http://placekitten.com/240/400' />
-                    </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Верхний баннер
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <div class='b-ad b-ad_top' style='width:900px;'>
-                    <img alt='' class='b-ad-pic' src='http://placekitten.com/720/90' />
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Сниппет под постом
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <p>TODO</p>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class='hb-table-cancel' id='Cancel'></div>
-      <div class='hb-table' id='snippets' style='width: 50%;'>
-        <table class='hb-table-in'>
-          <caption class='hb-table-caption'>
-            <a class='hb-table-caption-link' href='#snippets'>
-              Сниппеты постов
-            </a>
-            <a class='hb-table-caption-reset' href='#Cancel'></a>
-          </caption>
-          <tbody class='hb-table-section'>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Основной
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <div class='b-snippet'>
-                    <div class='b-snippet-figure'>
-                      <img alt='' class='b-snippet-pic' src='http://placekitten.com/200/134' />
-                    </div>
-                    <h3 class='b-header'>
-                      <a class='b-link' href='#lol'>Что нужно знать про металлокерамические коронки — максимум из четырех строк</a>
-                    </h3>
-                    <ul class='b-snippet-meta'>
-                      <li class='b-snippet-meta-item'>
-                        15 cентября
-                      </li>
-                      <li class='b-snippet-meta-item'>
-                        <a class='b-link b-link_comments' href='#lol'>
-                          18 комментариев
-                        </a>
-                      </li>
-                    </ul>
-                    <div class='b-snippet-content'>
-                      Вопрос о том, какой способ реставрации лучше восстановит разрушенный зуб, вкладка, коронка или традиционная пломба, волнует многих пациентов.
-                      <ul class='b-snippet-meta'>
-                        <li class='b-snippet-meta-item'>
-                          <a class='b-link b-link_comments' href='#lol'>
-                            18 комментариев
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Уменьшенный
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <div class='b-snippet b-snippet_minor'>
-                    <div class='b-snippet-figure'>
-                      <img alt='' class='b-snippet-pic' src='http://placekitten.com/89/134' />
-                    </div>
-                    <h3 class='b-header'>
-                      <a class='b-link' href='#lol'>Ксилит — сладкое средство для борьбы с кариесом</a>
-                    </h3>
-                    <ul class='b-snippet-meta'>
-                      <li class='b-snippet-meta-item'>
-                        15 cентября
-                      </li>
-                      <li class='b-snippet-meta-item'>
-                        <a class='b-link' href='#lol' rel='tag'>
-                          Брекет-системы
-                        </a>
-                      </li>
-                    </ul>
-                    <div class='b-snippet-content'>
-                      Вопрос о том, какой способ реставрации лучше восстановит разрушенный зуб, вкладка, коронка или традиционная пломба, волнует многих пациентов.
-                      <ul class='b-snippet-meta'>
-                        <li class='b-snippet-meta-item'>
-                          <a class='b-link b-link_comments' href='#lol'>
-                            18 комментариев
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Похожие статьи
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <ul class='b-snippets'>
-                    <li class='b-snippet'>
-                      <h3 class='b-header'>
-                        <a class='b-link' href='#lol'>Что нужно знать про металлокерамические коронки — максимум из четырех строк</a>
-                      </h3>
-                      <ul class='b-snippet-meta'>
-                        <li class='b-snippet-meta-item'>
-                          15 cентября 2010
-                        </li>
-                        <li class='b-snippet-meta-item'>
-                          <a class='b-link b-link_comments' href='#lol'>
-                            18 комментариев
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class='b-snippet'>
-                      <h3 class='b-header'>
-                        <a class='b-link' href='#lol'>Компьютерные системы в функциональном и эстетическом протезировании</a>
-                      </h3>
-                      <ul class='b-snippet-meta'>
-                        <li class='b-snippet-meta-item'>
-                          2 марта 2010
-                        </li>
-                        <li class='b-snippet-meta-item'>
-                          <a class='b-link b-link_comments' href='#lol'>
-                            1 комментарий
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class='b-snippet'>
-                      <h3 class='b-header'>
-                        <a class='b-link' href='#lol'>Что нужно знать про металлокерамические коронки — максимум из четырех строк</a>
-                      </h3>
-                      <ul class='b-snippet-meta'>
-                        <li class='b-snippet-meta-item'>
-                          4 октября 2009
-                        </li>
-                        <li class='b-snippet-meta-item'>
-                          <a class='b-link b-link_comments' href='#lol'>
-                            нет комментариев
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Мини-сниппет автора
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <div class='b-snippet b-snippet_mini'>
-                    <div class='b-snippet-figure'>
-                      <img alt='' class='b-snippet-pic' src='http://placekitten.com/100/100' />
-                    </div>
-                    <div class='b-snippet-content'>
-                      <h3 class='b-snippet-header'>Автор статьи</h3>
-                      <a class='b-link b-header' href='#lol'>Константин<br/>Константинопольский</a>
-                      <div class='b-snippet-meta b-snippet-meta_online'>
-                        <div class='b-ico b-ico_pseudo b-ico_bullet'>•</div>
-                        На сайте
-                      </div>
-                      <a class='b-button' href='#lol'><span class='b-button-in'>Задать вопрос</span></a>
-                    </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Мини-сниппет компании
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <div class='b-snippet b-snippet_mini'>
-                    <h3 class='b-snippet-header'>Автор работает в клинике</h3>
-                    <div class='b-snippet-figure'>
-                      <img alt='' class='b-snippet-pic' src='http://placekitten.com/60/60' />
-                    </div>
-                    <div class='b-snippet-content'>
-                      <a class='b-link b-header b-header_minor b-header_v2' href='#lol'>Dental Tooth Studio</a>
-                      <div class='b-snippet-meta'>(831) 438-02-38</div>
-                      <div class='b-snippet-meta'>(831) 438-02-38</div>
-                      <div class='b-snippet-meta'>
-                        <a class='b-link b-link_w' href='#lol'><b class='b-ico b-ico_pseudo b-ico_external'>
-                          <b class='b-ico-i1'></b>
-                          <b class='b-ico-i2'></b>
-                        </b><span class='b-link-in'>dentalstudio.ru</span></a>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <div class='b-ad'>
+                      <div class='b-ad-title'>Рекламочка</div>
+                      <div class='b-ad-in'>
+                        <img alt='' class='b-ad-pic' src='http://placekitten.com/240/400' />
                       </div>
                     </div>
                   </div>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Мини-сниппет рекламной клиники
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <div class='b-snippet b-snippet_mini'>
-                    <div class='b-snippet-figure'>
-                      <img alt='' class='b-snippet-pic' src='http://placekitten.com/100/100' />
-                    </div>
-                    <div class='b-snippet-content'>
-                      <a class='b-link b-header b-header_minor b-header_v2' href='#lol'>Dental Studio</a>
-                      <div class='b-snippet-meta b-snippet-meta_address'>Москва, Бабушкинский район, Летчика Бабушкина ул., дом 23 (вход со двора)</div>
-                      <div class='b-snippet-meta b-snippet-meta_address'>Метро ст. Бабушкинская, Отрадное, Медведково.</div>
-                      <div class='b-snippet-meta'>
-                        <a class='b-link b-link_w' href='#lol'><b class='b-ico b-ico_pseudo b-ico_external'>
-                          <b class='b-ico-i1'></b>
-                          <b class='b-ico-i2'></b>
-                        </b><span class='b-link-in'>dentalstudio.ru</span></a>
-                      </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Верхний баннер
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <div class='b-ad b-ad_top' style='width:900px;'>
+                      <img alt='' class='b-ad-pic' src='http://placekitten.com/720/90' />
                     </div>
                   </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class='hb-table-cancel' id='Cancel'></div>
-      <div class='hb-table' id='text' style='width: 50%;'>
-        <table class='hb-table-in'>
-          <caption class='hb-table-caption'>
-            <a class='hb-table-caption-link' href='#text'>
-              Текстовые блоки
-            </a>
-            <a class='hb-table-caption-reset' href='#Cancel'></a>
-          </caption>
-          <tbody class='hb-table-section'>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Подзаголовок статьи
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <div class='b-article-meta'>
-                    <time>15 декабря</time>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Сниппет под постом
                   </div>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Заголовки
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <div class='b-article-text b-text'>
-                    <h1>Заголовок первого уровня</h1>
-                    <p>Абзац текста</p>
-                    <h2>Заголовок второго уровня</h2>
-                    <p>Абзац текста</p>
-                    <h3>Заголовок третьего уровня</h3>
-                    <p>Абзац текста</p>
-                    <h4>Заголовок четвертого уровня</h4>
-                    <p>Абзац текста</p>
-                    <h5>Заголовок пятого уровня</h5>
-                    <p>Абзац текста</p>
-                    <h6>Заголовок шестого уровня</h6>
-                    <p>Абзац текста</p>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <p>TODO</p>
                   </div>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Списки
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <div class='b-article-text b-text'>
-                    <ul>
-                      <li>Первый пункт</li>
-                      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                      <li>Третий пункт</li>
-                    </ul>
-                    <ol>
-                      <li>Первый пункт</li>
-                      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                      <li>
-                        <p>Третий пункт</p>
-                        <ol>
-                          <li>Первый пункт</li>
-                          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                          <li>Третий пункт</li>
-                        </ol>
-                      </li>
-                    </ol>
-                    <dl>
-                      <dt>Термин 1</dt>
-                      <dd>Описание 1</dd>
-                      <dt>Термин 2</dt>
-                      <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
-                      <dt>Термин 3</dt>
-                      <dd>Описание 3</dd>
-                    </dl>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class='hb-table-cancel' id='Cancel'></div>
+        <div class='hb-table' id='buttons'>
+          <table class='hb-table-in'>
+            <caption class='hb-table-caption'>
+              <a class='hb-table-caption-link' href='#buttons'>
+                Кнопки
+              </a>
+              <a class='hb-table-caption-reset' href='#Cancel'></a>
+            </caption>
+            <tbody class='hb-table-section'>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Кнопка ссылкой
                   </div>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Таблица
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <div class='b-article-text b-text'>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th rowspan='2'>Вид размера и отношения</th>
-                          <th colspan='3'>Сплавы</th>
-                          <td> </td>
-                          <th colspan='2'>По моделям</th>
-                        </tr>
-                        <tr>
-                          <th>Цинковые</th>
-                          <th>Магниевые</th>
-                          <th>Медные</th>
-                          <td> </td>
-                          <th>Сталь</th>
-                          <th>Чугун</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope='horisontal'>Наименьший <i>d</i> отверстия</th>
-                          <td>0,8</td>
-                          <td>2</td>
-                          <td>2,1</td>
-                          <td> </td>
-                          <td>1,5</td>
-                          <td>2</td>
-                        </tr>
-                        <tr>
-                          <th>Наименьшие размеры резьбы:</th>
-                        </tr>
-                        <tr>
-                          <th class='t-indented' scope='horisontal'>наружной</th>
-                          <td>6</td>
-                          <td>12,0</td>
-                          <td>12</td>
-                          <td> </td>
-                          <td>6</td>
-                          <td>100,0</td>
-                        </tr>
-                        <tr>
-                          <th class='t-indented' scope='horisontal'>внутренней</th>
-                          <td>10</td>
-                          <td>—</td>
-                          <td>20</td>
-                          <td> </td>
-                          <td>1</td>
-                          <td>—</td>
-                        </tr>
-                        <tr>
-                          <th class='t-indented' scope='horisontal'>шаг</th>
-                          <td>0.75</td>
-                          <td>1,5</td>
-                          <td>1</td>
-                          <td> </td>
-                          <td>—</td>
-                          <td>2,5</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <a class='b-button' href='#lol'><span class='b-button-in'>Поставить диагноз</span></a>
                   </div>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Иллюстрации
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <div class='b-article-text b-text'>
-                    <figure>
-                      <img alt='' src='http://placekitten.com/489/241' />
-                    </figure>
-                    <figure>
-                      <img alt='' src='http://placekitten.com/450/382' />
-                      <figcaption>
-                        <header>Устройство челюсти человека</header>
-                        1 малая берцовая кость; 2 зуб; 3 еще зуб; 5 резец; 6 зубец; 7 коронка;8 впадинка; 9 что-то еще
-                      </figcaption>
-                    </figure>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Вторая версия
                   </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class='hb-table-cancel' id='Cancel'></div>
-      <div class='hb-table' id='menus'>
-        <table class='hb-table-in'>
-          <caption class='hb-table-caption'>
-            <a class='hb-table-caption-link' href='#menus'>
-              Меню
-            </a>
-            <a class='hb-table-caption-reset' href='#Cancel'></a>
-          </caption>
-          <tbody class='hb-table-section'>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Главное
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <ul class='b-menu'><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>Пункт 1</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>Пункт 2</a></li><li class='b-menu-item b-menu-item_current'><a class='b-menu-item-in' href='#lol'>Выбранный со ссылкой</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>Пункт 4</a></li></ul>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Вертикальное
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <ul class='b-menu b-menu_v'><li class='b-menu-item b-menu-item_current'><a class='b-menu-item-in'>
-                    Пункт в несколько
-                    <br />
-                    строк
-                  </a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>Пункт 3</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>Пункт 2</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>Пункт 4</a></li></ul>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Архив
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <ul class='b-menu'><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>2011</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>2012</a></li><li class='b-menu-item b-menu-item_current'><a class='b-menu-item-in'>2013</a></li></ul>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Паджинация
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <ul class='b-menu b-menu_pages'><li class='b-menu-item b-menu-item_current'><a class='b-menu-item-in'>1</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>2</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>3</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>4</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>5</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>6</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>7</a></li></ul>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Хлебные крошки
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <ul class='b-menu b-menu_crumbs'><li class='b-menu-item'><a class='b-link' href='#lol'>Словарь терминов</a></li><li class='b-menu-item'><a class='b-link' href='#lol'>Термины от А до Г</a></li></ul>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class='hb-table-cancel' id='Cancel'></div>
-      <div class='hb-table' id='comments' style='width:400px'>
-        <table class='hb-table-in'>
-          <caption class='hb-table-caption'>
-            <a class='hb-table-caption-link' href='#comments'>
-              Комментарии
-            </a>
-            <a class='hb-table-caption-reset' href='#Cancel'></a>
-          </caption>
-          <tbody class='hb-table-section'>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Просто комментарий
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <dl class='b-comment'>
-                    <dt class='b-comment-meta'>
-                      <span class='b-comment-author'>Антон Ловчиков</span>
-                    </dt>
-                    <dd class='b-comment-content b-text'>Мне бы то же хотелось видеть эту «протоплазму», из которой родится вот-вот русского народа самость. Может и есть она где, но не она показалась в уличных беспорядках в столице. У этих ребят кровь кипит не праведным гневом, а гормонами.</dd>
-                  </dl>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Комментарий от автора
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <dl class='b-comment b-comment_special'>
-                    <dt class='b-comment-meta'>
-                      <a class='b-comment-author b-link' href='#lol'>Константин Константинопольский</a><span class='b-comment-title'>, автор</span></dt>
-                    <dd class='b-comment-content b-text'>Алексей, это всего лишь безобидная традиция, ритуал.</dd>
-                  </dl>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Комментарий со всяким пользовательским контентом
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <dl class='b-comment'>
-                    <dt class='b-comment-meta'>
-                      <span class='b-comment-author'>Антон Ловчиков</span>
-                    </dt>
-                    <dd class='b-comment-content b-text'>
-                      <p>Для начала, абзац какой-то</p>
-                      <ul>
-                        <li>И какой-то список</li>
-                        <li>Из трёх пунктов</li>
-                        <li>По которому видно, что можно использовать HTML в комментариях.</li>
-                      </ul>
-                    </dd>
-                  </dl>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class='hb-table-cancel' id='Cancel'></div>
-      <div class='hb-table' id='headers'>
-        <table class='hb-table-in'>
-          <caption class='hb-table-caption'>
-            <a class='hb-table-caption-link' href='#headers'>
-              Заголовки
-            </a>
-            <a class='hb-table-caption-reset' href='#Cancel'></a>
-          </caption>
-          <tbody class='hb-table-section'>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Простой заголовок
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <h3 class='b-header'>
-                    Заголовок
-                  </h3>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Второй вариант
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <h3 class='b-header b-header_v2'>
-                    Заголовок
-                  </h3>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Две строки
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <h3 class='b-header'>
-                    Заголовок<br />в две строки
-                  </h3>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Второй со ссылкой
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <h3 class='b-header b-header_v2'>
-                    <a class='b-link' href='#lol'>
-                      Заголовок<br />в две строки
-                    </a>
-                  </h3>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Ссылка, пересечением
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <a class='b-header b-link' href='#lol'>
-                    Заголовок<br />в две строки
-                  </a>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Большой и цифра
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <h1 class='b-header b-header_big'>
-                    Заголовок<sup>
-                      42
-                    </sup></h1>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Большой в две строки
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <h1 class='b-header b-header_v2 b-header_big'>
-                    Заголовок<br />в две строки
-                  </h1>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Средний
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <h2 class='b-header b-header_middle'>
-                    Заголовок<sup>
-                      42
-                    </sup></h2>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Типа рекламный
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <h3 class='b-header b-header_v2'>
-                    <a class='b-link b-link_w b-link_multiline' href='#lol'>
-                      <span class='b-link-in'>Лазерная<br />имплантация зубов:<br />быстро, качественно,<br />надежно</span>
-                      *
-                    </a>
-                  </h3>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class='hb-table-cancel' id='Cancel'></div>
-      <div class='hb-table' id='links' style='font-size: 16px;'>
-        <table class='hb-table-in'>
-          <caption class='hb-table-caption'>
-            <a class='hb-table-caption-link' href='#links'>
-              Ссылки
-            </a>
-            <a class='hb-table-caption-reset' href='#Cancel'></a>
-          </caption>
-          <tbody class='hb-table-section'>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Просто
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <a class='b-link' href='#lol'>
-                    Hello!
-                  </a>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   С кавычками
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <a class='b-link b-link_w' href='#lol'>«<span class='b-link-in'>Hello!</span>»</a>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Со стрелочкой
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <a class='b-link b-link_w' href='#lol'>←
-                  <span class='b-link-in'>поиск</span></a>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Со звёздочкой
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <a class='b-link b-link_w' href='#lol'><span class='b-link-in'>правда</span>
-                  *</a>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Псевдо
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <a class='b-link b-link_js' href='#lol'>
-                    Hello!
-                  </a>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Псевдо с кавычками
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <a class='b-link b-link_w b-link_js' href='#lol'>«<span class='b-link-in'>Hello!</span>»</a>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   С иконкой
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <a class='b-link b-link_w' href='http://example.com/'><b class='b-ico b-ico_pseudo b-ico_external'>
-                    <b class='b-ico-i1'></b>
-                    <b class='b-ico-i2'></b>
-                  </b><span class='b-link-in'>example.com</span></a>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   С циферкой
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <a class='b-link b-link_w' href='#lol'><span class='b-link-in'>
-                    Hello!
-                  </span><sup>
-                    32
-                  </sup></a>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class='hb-table-cancel' id='Cancel'></div>
-      <div class='hb-table' id='tools' style='width: 40%;'>
-        <table class='hb-table-in'>
-          <caption class='hb-table-caption'>
-            <a class='hb-table-caption-link' href='#tools'>
-              Блоки с инструментами
-            </a>
-            <a class='hb-table-caption-reset' href='#Cancel'></a>
-          </caption>
-          <tbody class='hb-table-section'>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Подобрать средство
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <div class='b-snippet b-snippet_tool b-snippet_tool_v2'>
-                    <h3 class='b-header b-header_v2'>
-                      Подберите средства индивидуальной гигиены
-                    </h3>
-                    <div class='b-snippet-content'>
-                      Дорогостоящего лечения у стоматолога можно избежать, если подобрать подходящие именно вам средства профилактики и индивидуальной гигиены
-                    </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
                     <a class='b-button b-button_v2' href='#lol'><span class='b-button-in'>Подобрать средство</span></a>
                   </div>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Поставить диагноз
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <div class='b-snippet b-snippet_tool'>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Вторая, но кнопкой
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <button class='b-button b-button_v2' type='button'><span class='b-button-in'>Подобрать средство</span></button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class='hb-table-cancel' id='Cancel'></div>
+        <div class='hb-table' id='comments' style='width:400px'>
+          <table class='hb-table-in'>
+            <caption class='hb-table-caption'>
+              <a class='hb-table-caption-link' href='#comments'>
+                Комментарии
+              </a>
+              <a class='hb-table-caption-reset' href='#Cancel'></a>
+            </caption>
+            <tbody class='hb-table-section'>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Просто комментарий
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <dl class='b-comment'>
+                      <dt class='b-comment-meta'>
+                        <span class='b-comment-author'>Антон Ловчиков</span>
+                      </dt>
+                      <dd class='b-comment-content b-text'>Мне бы то же хотелось видеть эту «протоплазму», из которой родится вот-вот русского народа самость. Может и есть она где, но не она показалась в уличных беспорядках в столице. У этих ребят кровь кипит не праведным гневом, а гормонами.</dd>
+                    </dl>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Комментарий от автора
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <dl class='b-comment b-comment_special'>
+                      <dt class='b-comment-meta'>
+                        <a class='b-comment-author b-link' href='#lol'>Константин Константинопольский</a><span class='b-comment-title'>, автор</span></dt>
+                      <dd class='b-comment-content b-text'>Алексей, это всего лишь безобидная традиция, ритуал.</dd>
+                    </dl>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Комментарий со всяким пользовательским контентом
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <dl class='b-comment'>
+                      <dt class='b-comment-meta'>
+                        <span class='b-comment-author'>Антон Ловчиков</span>
+                      </dt>
+                      <dd class='b-comment-content b-text'>
+                        <p>Для начала, абзац какой-то</p>
+                        <ul>
+                          <li>И какой-то список</li>
+                          <li>Из трёх пунктов</li>
+                          <li>По которому видно, что можно использовать HTML в комментариях.</li>
+                        </ul>
+                      </dd>
+                    </dl>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class='hb-table-cancel' id='Cancel'></div>
+        <div class='hb-table' id='disclaimer'>
+          <table class='hb-table-in'>
+            <caption class='hb-table-caption'>
+              <a class='hb-table-caption-link' href='#disclaimer'>
+                Дисклеймер
+              </a>
+              <a class='hb-table-caption-reset' href='#Cancel'></a>
+            </caption>
+            <tbody class='hb-table-section'>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Рекламный дисклеймер
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <div class='b-disclaimer'>
+                      Рекламная статья
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class='hb-table-cancel' id='Cancel'></div>
+        <div class='hb-table' id='footnotes'>
+          <table class='hb-table-in'>
+            <caption class='hb-table-caption'>
+              <a class='hb-table-caption-link' href='#footnotes'>
+                Сноски
+              </a>
+              <a class='hb-table-caption-reset' href='#Cancel'></a>
+            </caption>
+            <tbody class='hb-table-section'>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Со звёздочкой
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <div class='b-footnotes'>
+                      <div class='b-footnotes-in'>
+                        <dl class='b-footnote' id='footnote'>
+                          <dt class='b-footnote-mark'>*</dt>
+                          <dt class='b-footnote-content'>В статье присутствуют рекламные материалы</dt>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     С циферками
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <div class='b-footnotes'>
+                      <div class='b-footnotes-in'>
+                        <dl class='b-footnote' id='footnote1'>
+                          <dt class='b-footnote-mark'>1.</dt>
+                          <dt class='b-footnote-content'>Ложь</dt>
+                        </dl>
+                        <dl class='b-footnote' id='footnote2'>
+                          <dt class='b-footnote-mark'>2.</dt>
+                          <dt class='b-footnote-content'>Этот пункт можно не учитывать</dt>
+                        </dl>
+                        <dl class='b-footnote' id='footnote3'>
+                          <dt class='b-footnote-mark'>3.</dt>
+                          <dt class='b-footnote-content'>Дщкуь шзыгь</dt>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class='hb-table-cancel' id='Cancel'></div>
+        <div class='hb-table' id='headers'>
+          <table class='hb-table-in'>
+            <caption class='hb-table-caption'>
+              <a class='hb-table-caption-link' href='#headers'>
+                Заголовки
+              </a>
+              <a class='hb-table-caption-reset' href='#Cancel'></a>
+            </caption>
+            <tbody class='hb-table-section'>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Простой заголовок
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
                     <h3 class='b-header'>
-                      Определите симптомы и поставьте диагноз
+                      Заголовок
                     </h3>
-                    <div class='b-snippet-content'>
-                      Научившись распознавать популярные заболевания зубов на начальных этапах развития, вы сможете своевременно обратиться к врачу.
-                    </div>
-                    <a class='b-button' href='#lol'><span class='b-button-in'>Поставить диагноз</span></a>
-                    <div class='b-snippet-content'>
-                      <a class='b-link' href='#lol'>Все диагозы</a>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Второй вариант
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <h3 class='b-header b-header_v2'>
+                      Заголовок
+                    </h3>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Две строки
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <h3 class='b-header'>
+                      Заголовок<br />в две строки
+                    </h3>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Второй со ссылкой
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <h3 class='b-header b-header_v2'>
+                      <a class='b-link' href='#lol'>
+                        Заголовок<br />в две строки
+                      </a>
+                    </h3>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Ссылка, пересечением
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <a class='b-header b-link' href='#lol'>
+                      Заголовок<br />в две строки
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Большой и цифра
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <h1 class='b-header b-header_big'>
+                      Заголовок<sup>
+                        42
+                      </sup></h1>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Большой в две строки
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <h1 class='b-header b-header_v2 b-header_big'>
+                      Заголовок<br />в две строки
+                    </h1>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Средний
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <h2 class='b-header b-header_middle'>
+                      Заголовок<sup>
+                        42
+                      </sup></h2>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Типа рекламный
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <h3 class='b-header b-header_v2'>
+                      <a class='b-link b-link_w b-link_multiline' href='#lol'>
+                        <span class='b-link-in'>Лазерная<br />имплантация зубов:<br />быстро, качественно,<br />надежно</span>
+                        *
+                      </a>
+                    </h3>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class='hb-table-cancel' id='Cancel'></div>
+        <div class='hb-table' id='icons'>
+          <table class='hb-table-in'>
+            <caption class='hb-table-caption'>
+              <a class='hb-table-caption-link' href='#icons'>
+                Иконки
+              </a>
+              <a class='hb-table-caption-reset' href='#Cancel'></a>
+            </caption>
+            <tbody class='hb-table-section'>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Внешняя ссылка
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <b class='b-ico b-ico_pseudo b-ico_external'>
+                      <b class='b-ico-i1'></b>
+                      <b class='b-ico-i2'></b>
+                    </b>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Буллит
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <b class='b-ico b-ico_pseudo b-ico_bullet'>•</b>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class='hb-table-cancel' id='Cancel'></div>
+        <div class='hb-table' id='incuts' style='width: 50%;'>
+          <table class='hb-table-in'>
+            <caption class='hb-table-caption'>
+              <a class='hb-table-caption-link' href='#incuts'>
+                Врезки с бордерами
+              </a>
+              <a class='hb-table-caption-reset' href='#Cancel'></a>
+            </caption>
+            <tbody class='hb-table-section'>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Просто врезка с заголовком
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <div class='b-incut'>
+                      <div class='b-incut-header'>Качественные брекеты немецкого производства вы сможете приобрести в следующих кликах:</div>
+                      <div class='b-incut-content b-cols'><div class='b-col b-col_half'>
+                          <div class='b-snippet b-snippet_mini'>
+                            <div class='b-snippet-figure'>
+                              <img alt='' class='b-snippet-pic' src='http://placekitten.com/100/100' />
+                            </div>
+                            <div class='b-snippet-content'>
+                              <a class='b-link b-header b-header_minor b-header_v2' href='#lol'>Dental Studio</a>
+                              <div class='b-snippet-meta b-snippet-meta_address'>Москва, Бабушкинский район, Летчика Бабушкина ул., дом 23 (вход со двора)</div>
+                              <div class='b-snippet-meta b-snippet-meta_address'>Метро ст. Бабушкинская, Отрадное, Медведково.</div>
+                              <div class='b-snippet-meta'>
+                                <a class='b-link b-link_w' href='#lol'><b class='b-ico b-ico_pseudo b-ico_external'>
+                                  <b class='b-ico-i1'></b>
+                                  <b class='b-ico-i2'></b>
+                                </b><span class='b-link-in'>dentalstudio.ru</span></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div><div class='b-col b-col_half'>
+                          <div class='b-snippet b-snippet_mini'>
+                            <div class='b-snippet-figure'>
+                              <img alt='' class='b-snippet-pic' src='http://placekitten.com/100/100' />
+                            </div>
+                            <div class='b-snippet-content'>
+                              <a class='b-link b-header b-header_minor b-header_v2' href='#lol'>А-Дент</a>
+                              <div class='b-snippet-meta b-snippet-meta_address'>Москва, Бабушкинский район, Летчика Бабушкина ул., дом 23 (вход со двора)</div>
+                              <div class='b-snippet-meta b-snippet-meta_address'>Метро ст. Бабушкинская, Отрадное, Медведково.</div>
+                              <div class='b-snippet-meta'>
+                                <a class='b-link b-link_w' href='#lol'><b class='b-ico b-ico_pseudo b-ico_external'>
+                                  <b class='b-ico-i1'></b>
+                                  <b class='b-ico-i2'></b>
+                                </b><span class='b-link-in'>dentalstudio.ru</span></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div></div>
+                      <a class='b-link b-incut_link' href='#lol'>Полный каталог клиник</a>
                     </div>
                   </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class='hb-table-cancel' id='Cancel'></div>
-      <div class='hb-table' id='disclaimer'>
-        <table class='hb-table-in'>
-          <caption class='hb-table-caption'>
-            <a class='hb-table-caption-link' href='#disclaimer'>
-              Дисклеймер
-            </a>
-            <a class='hb-table-caption-reset' href='#Cancel'></a>
-          </caption>
-          <tbody class='hb-table-section'>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Рекламный дисклеймер
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <div class='b-disclaimer'>
-                    Рекламная статья
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Врезка с неравными половинками и разделителем
                   </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class='hb-table-cancel' id='Cancel'></div>
-      <div class='hb-table' id='footnotes'>
-        <table class='hb-table-in'>
-          <caption class='hb-table-caption'>
-            <a class='hb-table-caption-link' href='#footnotes'>
-              Сноски
-            </a>
-            <a class='hb-table-caption-reset' href='#Cancel'></a>
-          </caption>
-          <tbody class='hb-table-section'>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Со звёздочкой
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <div class='b-footnotes'>
-                    <div class='b-footnotes-in'>
-                      <dl class='b-footnote' id='footnote'>
-                        <dt class='b-footnote-mark'>*</dt>
-                        <dt class='b-footnote-content'>В статье присутствуют рекламные материалы</dt>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <div class='b-incut b-incut_full b-incut b-incut_quirky'>
+                      <div class='b-incut-content'>
+                        <div class='b-incut-item b-snippet b-snippet_mini'>
+                          <div class='b-snippet-figure'>
+                            <img alt='' class='b-snippet-pic' src='http://placekitten.com/100/100' />
+                          </div>
+                          <div class='b-snippet-content'>
+                            <h3 class='b-snippet-header'>Автор статьи</h3>
+                            <a class='b-link b-header' href='#lol'>Константин<br/>Константинопольский</a>
+                            <div class='b-snippet-meta b-snippet-meta_online'>
+                              <div class='b-ico b-ico_pseudo b-ico_bullet'>•</div>
+                              На сайте
+                            </div>
+                            <a class='b-button' href='#lol'><span class='b-button-in'>Задать вопрос</span></a>
+                          </div>
+                        </div>
+                        <div class='b-incut-divider'></div>
+                        <div class='b-incut-item b-snippet b-snippet_mini'>
+                          <h3 class='b-snippet-header'>Автор работает в клинике</h3>
+                          <div class='b-snippet-figure'>
+                            <img alt='' class='b-snippet-pic' src='http://placekitten.com/60/60' />
+                          </div>
+                          <div class='b-snippet-content'>
+                            <a class='b-link b-header b-header_minor b-header_v2' href='#lol'>Dental Tooth Studio</a>
+                            <div class='b-snippet-meta'>(831) 438-02-38</div>
+                            <div class='b-snippet-meta'>(831) 438-02-38</div>
+                            <div class='b-snippet-meta'>
+                              <a class='b-link b-link_w' href='#lol'><b class='b-ico b-ico_pseudo b-ico_external'>
+                                <b class='b-ico-i1'></b>
+                                <b class='b-ico-i2'></b>
+                              </b><span class='b-link-in'>dentalstudio.ru</span></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class='b-incut-helper'></div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class='hb-table-cancel' id='Cancel'></div>
+        <div class='hb-table' id='letterlist' style='width: 40%;'>
+          <table class='hb-table-in'>
+            <caption class='hb-table-caption'>
+              <a class='hb-table-caption-link' href='#letterlist'>
+                Алфавитный указатель
+              </a>
+              <a class='hb-table-caption-reset' href='#Cancel'></a>
+            </caption>
+            <tbody class='hb-table-section'>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Список терминов
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <div class='b-cols'><ul class='b-letterlist b-col b-col_half'>
+                        <li class='b-letterlist-item'><a class='b-link' href='#lol'><span class='b-letterlist-char'>А</span>гава—<span class='b-letterlist-char'>Г</span>угенот</a></li>
+                        <li class='b-letterlist-item'><a class='b-link' href='#lol'><span class='b-letterlist-char'>Д</span>ирижабль—<span class='b-letterlist-char'>З</span>яблик</a></li>
+                        <li class='b-letterlist-item'><a class='b-link' href='#lol'><span class='b-letterlist-char'>И</span>алончель—<span class='b-letterlist-char'>М</span>юсли</a></li>
+                        <li class='b-letterlist-item'><a class='b-link' href='#lol'><span class='b-letterlist-char'>Н</span>афталин—<span class='b-letterlist-char'>Р</span>асстегай</a></li>
+                      </ul><ul class='b-letterlist b-col b-col_half'>
+                        <li class='b-letterlist-item'><a class='b-link' href='#lol'><span class='b-letterlist-char'>С</span>аакашвили—<span class='b-letterlist-char'>У</span>фа</a></li>
+                        <li class='b-letterlist-item'><a class='b-link' href='#lol'><span class='b-letterlist-char'>Ф</span>аталити—<span class='b-letterlist-char'>Ш</span>ырик</a></li>
+                        <li class='b-letterlist-item'><a class='b-link' href='#lol'><span class='b-letterlist-char'>Щ</span>ипак—<span class='b-letterlist-char'>Э</span>ндохрюнолог</a></li>
+                        <li class='b-letterlist-item'><a class='b-link' href='#lol'><span class='b-letterlist-char'>Ю</span>суф—<span class='b-letterlist-char'>Я</span>шма</a></li>
+                      </ul></div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class='hb-table-cancel' id='Cancel'></div>
+        <div class='hb-table' id='links' style='font-size: 16px;'>
+          <table class='hb-table-in'>
+            <caption class='hb-table-caption'>
+              <a class='hb-table-caption-link' href='#links'>
+                Ссылки
+              </a>
+              <a class='hb-table-caption-reset' href='#Cancel'></a>
+            </caption>
+            <tbody class='hb-table-section'>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Просто
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <a class='b-link' href='#lol'>
+                      Hello!
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     С кавычками
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <a class='b-link b-link_w' href='#lol'>«<span class='b-link-in'>Hello!</span>»</a>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Со стрелочкой
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <a class='b-link b-link_w' href='#lol'>←
+                    <span class='b-link-in'>поиск</span></a>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Со звёздочкой
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <a class='b-link b-link_w' href='#lol'><span class='b-link-in'>правда</span>
+                    *</a>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Псевдо
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <a class='b-link b-link_js' href='#lol'>
+                      Hello!
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Псевдо с кавычками
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <a class='b-link b-link_w b-link_js' href='#lol'>«<span class='b-link-in'>Hello!</span>»</a>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     С иконкой
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <a class='b-link b-link_w' href='http://example.com/'><b class='b-ico b-ico_pseudo b-ico_external'>
+                      <b class='b-ico-i1'></b>
+                      <b class='b-ico-i2'></b>
+                    </b><span class='b-link-in'>example.com</span></a>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     С циферкой
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <a class='b-link b-link_w' href='#lol'><span class='b-link-in'>
+                      Hello!
+                    </span><sup>
+                      32
+                    </sup></a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class='hb-table-cancel' id='Cancel'></div>
+        <div class='hb-table' id='menus'>
+          <table class='hb-table-in'>
+            <caption class='hb-table-caption'>
+              <a class='hb-table-caption-link' href='#menus'>
+                Меню
+              </a>
+              <a class='hb-table-caption-reset' href='#Cancel'></a>
+            </caption>
+            <tbody class='hb-table-section'>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Главное
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <ul class='b-menu'><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>Пункт 1</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>Пункт 2</a></li><li class='b-menu-item b-menu-item_current'><a class='b-menu-item-in' href='#lol'>Выбранный со ссылкой</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>Пункт 4</a></li></ul>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Вертикальное
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <ul class='b-menu b-menu_v'><li class='b-menu-item b-menu-item_current'><a class='b-menu-item-in'>
+                      Пункт в несколько
+                      <br />
+                      строк
+                    </a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>Пункт 3</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>Пункт 2</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>Пункт 4</a></li></ul>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Архив
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <ul class='b-menu'><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>2011</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>2012</a></li><li class='b-menu-item b-menu-item_current'><a class='b-menu-item-in'>2013</a></li></ul>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Паджинация
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <ul class='b-menu b-menu_pages'><li class='b-menu-item b-menu-item_current'><a class='b-menu-item-in'>1</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>2</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>3</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>4</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>5</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>6</a></li><li class='b-menu-item'><a class='b-menu-item-in' href='#lol'>7</a></li></ul>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Хлебные крошки
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <ul class='b-menu b-menu_crumbs'><li class='b-menu-item'><a class='b-link' href='#lol'>Словарь терминов</a></li><li class='b-menu-item'><a class='b-link' href='#lol'>Термины от А до Г</a></li></ul>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class='hb-table-cancel' id='Cancel'></div>
+        <div class='hb-table' id='search' style='width: 300px;'>
+          <table class='hb-table-in'>
+            <caption class='hb-table-caption'>
+              <a class='hb-table-caption-link' href='#search'>
+                Поиск
+              </a>
+              <a class='hb-table-caption-reset' href='#Cancel'></a>
+            </caption>
+            <tbody class='hb-table-section'>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Блок поиска
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <form action='' class='b-search'>
+                      <input class='b-search-submit' tabindex='2' type='submit' value='Найти' />
+                      <span class='b-search-in'>
+                        <input class='b-search-input' placeholder='поиск' tabindex='1' type='search' />
+                      </span>
+                    </form>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class='hb-table-cancel' id='Cancel'></div>
+        <div class='hb-table' id='snippets' style='width: 50%;'>
+          <table class='hb-table-in'>
+            <caption class='hb-table-caption'>
+              <a class='hb-table-caption-link' href='#snippets'>
+                Сниппеты постов
+              </a>
+              <a class='hb-table-caption-reset' href='#Cancel'></a>
+            </caption>
+            <tbody class='hb-table-section'>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Основной
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <div class='b-snippet'>
+                      <div class='b-snippet-figure'>
+                        <img alt='' class='b-snippet-pic' src='http://placekitten.com/200/134' />
+                      </div>
+                      <h3 class='b-header'>
+                        <a class='b-link' href='#lol'>Что нужно знать про металлокерамические коронки — максимум из четырех строк</a>
+                      </h3>
+                      <ul class='b-snippet-meta'>
+                        <li class='b-snippet-meta-item'>
+                          15 cентября
+                        </li>
+                        <li class='b-snippet-meta-item'>
+                          <a class='b-link b-link_comments' href='#lol'>
+                            18 комментариев
+                          </a>
+                        </li>
+                      </ul>
+                      <div class='b-snippet-content'>
+                        Вопрос о том, какой способ реставрации лучше восстановит разрушенный зуб, вкладка, коронка или традиционная пломба, волнует многих пациентов.
+                        <ul class='b-snippet-meta'>
+                          <li class='b-snippet-meta-item'>
+                            <a class='b-link b-link_comments' href='#lol'>
+                              18 комментариев
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Уменьшенный
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <div class='b-snippet b-snippet_minor'>
+                      <div class='b-snippet-figure'>
+                        <img alt='' class='b-snippet-pic' src='http://placekitten.com/89/134' />
+                      </div>
+                      <h3 class='b-header'>
+                        <a class='b-link' href='#lol'>Ксилит — сладкое средство для борьбы с кариесом</a>
+                      </h3>
+                      <ul class='b-snippet-meta'>
+                        <li class='b-snippet-meta-item'>
+                          15 cентября
+                        </li>
+                        <li class='b-snippet-meta-item'>
+                          <a class='b-link' href='#lol' rel='tag'>
+                            Брекет-системы
+                          </a>
+                        </li>
+                      </ul>
+                      <div class='b-snippet-content'>
+                        Вопрос о том, какой способ реставрации лучше восстановит разрушенный зуб, вкладка, коронка или традиционная пломба, волнует многих пациентов.
+                        <ul class='b-snippet-meta'>
+                          <li class='b-snippet-meta-item'>
+                            <a class='b-link b-link_comments' href='#lol'>
+                              18 комментариев
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Похожие статьи
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <ul class='b-snippets'>
+                      <li class='b-snippet'>
+                        <h3 class='b-header'>
+                          <a class='b-link' href='#lol'>Что нужно знать про металлокерамические коронки — максимум из четырех строк</a>
+                        </h3>
+                        <ul class='b-snippet-meta'>
+                          <li class='b-snippet-meta-item'>
+                            15 cентября 2010
+                          </li>
+                          <li class='b-snippet-meta-item'>
+                            <a class='b-link b-link_comments' href='#lol'>
+                              18 комментариев
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class='b-snippet'>
+                        <h3 class='b-header'>
+                          <a class='b-link' href='#lol'>Компьютерные системы в функциональном и эстетическом протезировании</a>
+                        </h3>
+                        <ul class='b-snippet-meta'>
+                          <li class='b-snippet-meta-item'>
+                            2 марта 2010
+                          </li>
+                          <li class='b-snippet-meta-item'>
+                            <a class='b-link b-link_comments' href='#lol'>
+                              1 комментарий
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class='b-snippet'>
+                        <h3 class='b-header'>
+                          <a class='b-link' href='#lol'>Что нужно знать про металлокерамические коронки — максимум из четырех строк</a>
+                        </h3>
+                        <ul class='b-snippet-meta'>
+                          <li class='b-snippet-meta-item'>
+                            4 октября 2009
+                          </li>
+                          <li class='b-snippet-meta-item'>
+                            <a class='b-link b-link_comments' href='#lol'>
+                              нет комментариев
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Мини-сниппет автора
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <div class='b-snippet b-snippet_mini'>
+                      <div class='b-snippet-figure'>
+                        <img alt='' class='b-snippet-pic' src='http://placekitten.com/100/100' />
+                      </div>
+                      <div class='b-snippet-content'>
+                        <h3 class='b-snippet-header'>Автор статьи</h3>
+                        <a class='b-link b-header' href='#lol'>Константин<br/>Константинопольский</a>
+                        <div class='b-snippet-meta b-snippet-meta_online'>
+                          <div class='b-ico b-ico_pseudo b-ico_bullet'>•</div>
+                          На сайте
+                        </div>
+                        <a class='b-button' href='#lol'><span class='b-button-in'>Задать вопрос</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Мини-сниппет компании
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <div class='b-snippet b-snippet_mini'>
+                      <h3 class='b-snippet-header'>Автор работает в клинике</h3>
+                      <div class='b-snippet-figure'>
+                        <img alt='' class='b-snippet-pic' src='http://placekitten.com/60/60' />
+                      </div>
+                      <div class='b-snippet-content'>
+                        <a class='b-link b-header b-header_minor b-header_v2' href='#lol'>Dental Tooth Studio</a>
+                        <div class='b-snippet-meta'>(831) 438-02-38</div>
+                        <div class='b-snippet-meta'>(831) 438-02-38</div>
+                        <div class='b-snippet-meta'>
+                          <a class='b-link b-link_w' href='#lol'><b class='b-ico b-ico_pseudo b-ico_external'>
+                            <b class='b-ico-i1'></b>
+                            <b class='b-ico-i2'></b>
+                          </b><span class='b-link-in'>dentalstudio.ru</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Мини-сниппет рекламной клиники
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <div class='b-snippet b-snippet_mini'>
+                      <div class='b-snippet-figure'>
+                        <img alt='' class='b-snippet-pic' src='http://placekitten.com/100/100' />
+                      </div>
+                      <div class='b-snippet-content'>
+                        <a class='b-link b-header b-header_minor b-header_v2' href='#lol'>Dental Studio</a>
+                        <div class='b-snippet-meta b-snippet-meta_address'>Москва, Бабушкинский район, Летчика Бабушкина ул., дом 23 (вход со двора)</div>
+                        <div class='b-snippet-meta b-snippet-meta_address'>Метро ст. Бабушкинская, Отрадное, Медведково.</div>
+                        <div class='b-snippet-meta'>
+                          <a class='b-link b-link_w' href='#lol'><b class='b-ico b-ico_pseudo b-ico_external'>
+                            <b class='b-ico-i1'></b>
+                            <b class='b-ico-i2'></b>
+                          </b><span class='b-link-in'>dentalstudio.ru</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class='hb-table-cancel' id='Cancel'></div>
+        <div class='hb-table' id='terms' style='width: 40%;'>
+          <table class='hb-table-in'>
+            <caption class='hb-table-caption'>
+              <a class='hb-table-caption-link' href='#terms'>
+                Термины
+              </a>
+              <a class='hb-table-caption-reset' href='#Cancel'></a>
+            </caption>
+            <tbody class='hb-table-section'>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Обычный термин
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <dl class='b-term'>
+                      <dt class='b-header'>
+                        <a class='b-link' href='#lol'>
+                          Абстракция
+                        </a>
+                      </dt>
+                      <dd class='b-term-content'>
+                        <div class='b-term-subheader'>
+                          (лат. название — <dfn class="b-term-latin">аbstractio</dfn>)
+                        </div>
+                        <div class='b-term-text'>
+                          Удаление, отвлечение — диагностический термин по классификации аномалий видов прикуса по Р. Simon, означающий расположение зубного ряда или части его ниже окклюзионной линии. Абстракция определяется по отношению к франкфуртской горизонтали.
+                          (Отступ слева будет задаваться контекстно от положения в раскладке)
+                        </div>
+                      </dd>
+                    </dl>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Большой термин
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <dl class='b-term b-term_big'>
+                      <dt class='b-header b-header_big'>
+                        Абберация
+                      </dt>
+                      <dd class='b-term-content'>
+                        <div class='b-term-text'>
+                          Отклонение от нормы; ошибки, нарушения погрешности (<i>лат</i>. aberratio «уклонение, удаление, отвлечение», от <i>лат</i>. aberrare (<i>лат</i>. ab- «от» + <i>лат</i>. errare «блуждать, заблуждаться») — «удаляться, отклоняться»).
+                        </div>
+                        <a class='b-link b-link_w b-link_back' href='#lol'>←
+                        <span class='b-link-in'>поиск</span></a>
+                      </dd>
+                    </dl>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class='hb-table-cancel' id='Cancel'></div>
+        <div class='hb-table' id='text' style='width: 50%;'>
+          <table class='hb-table-in'>
+            <caption class='hb-table-caption'>
+              <a class='hb-table-caption-link' href='#text'>
+                Текстовые блоки
+              </a>
+              <a class='hb-table-caption-reset' href='#Cancel'></a>
+            </caption>
+            <tbody class='hb-table-section'>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Подзаголовок статьи
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <div class='b-article-meta'>
+                      <time>15 декабря</time>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Заголовки
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <div class='b-article-text b-text'>
+                      <h1>Заголовок первого уровня</h1>
+                      <p>Абзац текста</p>
+                      <h2>Заголовок второго уровня</h2>
+                      <p>Абзац текста</p>
+                      <h3>Заголовок третьего уровня</h3>
+                      <p>Абзац текста</p>
+                      <h4>Заголовок четвертого уровня</h4>
+                      <p>Абзац текста</p>
+                      <h5>Заголовок пятого уровня</h5>
+                      <p>Абзац текста</p>
+                      <h6>Заголовок шестого уровня</h6>
+                      <p>Абзац текста</p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Списки
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <div class='b-article-text b-text'>
+                      <ul>
+                        <li>Первый пункт</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                        <li>Третий пункт</li>
+                      </ul>
+                      <ol>
+                        <li>Первый пункт</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                        <li>
+                          <p>Третий пункт</p>
+                          <ol>
+                            <li>Первый пункт</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                            <li>Третий пункт</li>
+                          </ol>
+                        </li>
+                      </ol>
+                      <dl>
+                        <dt>Термин 1</dt>
+                        <dd>Описание 1</dd>
+                        <dt>Термин 2</dt>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+                        <dt>Термин 3</dt>
+                        <dd>Описание 3</dd>
                       </dl>
                     </div>
                   </div>
-                </div>
-              </td>
-            </tr>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   С циферками
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <div class='b-footnotes'>
-                    <div class='b-footnotes-in'>
-                      <dl class='b-footnote' id='footnote1'>
-                        <dt class='b-footnote-mark'>1.</dt>
-                        <dt class='b-footnote-content'>Ложь</dt>
-                      </dl>
-                      <dl class='b-footnote' id='footnote2'>
-                        <dt class='b-footnote-mark'>2.</dt>
-                        <dt class='b-footnote-content'>Этот пункт можно не учитывать</dt>
-                      </dl>
-                      <dl class='b-footnote' id='footnote3'>
-                        <dt class='b-footnote-mark'>3.</dt>
-                        <dt class='b-footnote-content'>Дщкуь шзыгь</dt>
-                      </dl>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Таблица
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <div class='b-article-text b-text'>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th rowspan='2'>Вид размера и отношения</th>
+                            <th colspan='3'>Сплавы</th>
+                            <td> </td>
+                            <th colspan='2'>По моделям</th>
+                          </tr>
+                          <tr>
+                            <th>Цинковые</th>
+                            <th>Магниевые</th>
+                            <th>Медные</th>
+                            <td> </td>
+                            <th>Сталь</th>
+                            <th>Чугун</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope='horisontal'>Наименьший <i>d</i> отверстия</th>
+                            <td>0,8</td>
+                            <td>2</td>
+                            <td>2,1</td>
+                            <td> </td>
+                            <td>1,5</td>
+                            <td>2</td>
+                          </tr>
+                          <tr>
+                            <th>Наименьшие размеры резьбы:</th>
+                          </tr>
+                          <tr>
+                            <th class='t-indented' scope='horisontal'>наружной</th>
+                            <td>6</td>
+                            <td>12,0</td>
+                            <td>12</td>
+                            <td> </td>
+                            <td>6</td>
+                            <td>100,0</td>
+                          </tr>
+                          <tr>
+                            <th class='t-indented' scope='horisontal'>внутренней</th>
+                            <td>10</td>
+                            <td>—</td>
+                            <td>20</td>
+                            <td> </td>
+                            <td>1</td>
+                            <td>—</td>
+                          </tr>
+                          <tr>
+                            <th class='t-indented' scope='horisontal'>шаг</th>
+                            <td>0.75</td>
+                            <td>1,5</td>
+                            <td>1</td>
+                            <td> </td>
+                            <td>—</td>
+                            <td>2,5</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class='hb-table-cancel' id='Cancel'></div>
-      <div class='hb-table' id='search' style='width: 300px;'>
-        <table class='hb-table-in'>
-          <caption class='hb-table-caption'>
-            <a class='hb-table-caption-link' href='#search'>
-              Поиск
-            </a>
-            <a class='hb-table-caption-reset' href='#Cancel'></a>
-          </caption>
-          <tbody class='hb-table-section'>
-            <tr class='hb-table-row'>
-              <th class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                   Блок поиска
-                </div>
-              </th>
-              <td class='hb-table-cell'>
-                <div class='hb-table-cell-in'>
-                  <form action='' class='b-search'>
-                    <input class='b-search-submit' type='submit' value='Найти' />
-                    <span class='b-search-in'>
-                      <input class='b-search-input' placeholder='поиск' type='search' />
-                    </span>
-                  </form>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Иллюстрации
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <div class='b-article-text b-text'>
+                      <figure>
+                        <img alt='' src='http://placekitten.com/489/241' />
+                      </figure>
+                      <figure>
+                        <img alt='' src='http://placekitten.com/450/382' />
+                        <figcaption>
+                          <header>Устройство челюсти человека</header>
+                          1 малая берцовая кость; 2 зуб; 3 еще зуб; 5 резец; 6 зубец; 7 коронка;8 впадинка; 9 что-то еще
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class='hb-table-cancel' id='Cancel'></div>
+        <div class='hb-table' id='tools' style='width: 40%;'>
+          <table class='hb-table-in'>
+            <caption class='hb-table-caption'>
+              <a class='hb-table-caption-link' href='#tools'>
+                Блоки с инструментами
+              </a>
+              <a class='hb-table-caption-reset' href='#Cancel'></a>
+            </caption>
+            <tbody class='hb-table-section'>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Подобрать средство
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <div class='b-snippet b-snippet_tool b-snippet_tool_v2'>
+                      <h3 class='b-header b-header_v2'>
+                        Подберите средства индивидуальной гигиены
+                      </h3>
+                      <div class='b-snippet-content'>
+                        Дорогостоящего лечения у стоматолога можно избежать, если подобрать подходящие именно вам средства профилактики и индивидуальной гигиены
+                      </div>
+                      <a class='b-button b-button_v2' href='#lol'><span class='b-button-in'>Подобрать средство</span></a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class='hb-table-row'>
+                <th class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                     Поставить диагноз
+                  </div>
+                </th>
+                <td class='hb-table-cell'>
+                  <div class='hb-table-cell-in'>
+                    <div class='b-snippet b-snippet_tool'>
+                      <h3 class='b-header'>
+                        Определите симптомы и поставьте диагноз
+                      </h3>
+                      <div class='b-snippet-content'>
+                        Научившись распознавать популярные заболевания зубов на начальных этапах развития, вы сможете своевременно обратиться к врачу.
+                      </div>
+                      <a class='b-button' href='#lol'><span class='b-button-in'>Поставить диагноз</span></a>
+                      <div class='b-snippet-content'>
+                        <a class='b-link' href='#lol'>Все диагозы</a>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
     </div>
     <!-- TODO: need non-blocking js includes here -->
-    <script src="http://yandex.st/jquery/1.6.3/jquery.min.js"></script>
-    <script src="../j/script.js"></script>
-    <!-- The end. -->
+      <script src="http://yandex.st/jquery/1.6.3/jquery.min.js"></script>
+      <script src="../j/script.js"></script>
+      <!-- The end. -->
   </body>
 </html>

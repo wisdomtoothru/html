@@ -8,7 +8,7 @@
  <!-- TODO: build two versions of stylesheets, on for ie and one for others -->
  <link href="s/style.css" rel="stylesheet" />
  <!--[if IE]>
-  <script src="s/style_ie.css"></script>
+  <script src="j/script_ie.js"></script>
   <link href="s/style_ie.css" rel="stylesheet" />
  <![endif]-->
  <title>Homepage</title>
@@ -24,13 +24,13 @@
       Зуб мудрости
      </span>
     </h1><nav class="b-page-nav b-col b-col_half_padded">
-     <ul class="b-menu b-menu_v"><li class="b-menu-item">            <a class="b-menu-item-in" href="articles/">Статьи</a></li><li class="b-menu-item">            <a class="b-menu-item-in" href="#lol">Видео</a></li></ul>
-     <ul class="b-menu b-menu_v"><li class="b-menu-item">            <a class="b-menu-item-in" href="#lol">Каталог клиник</a></li><li class="b-menu-item">            <a class="b-menu-item-in" href="#lol">Вопрос-ответ</a></li></ul>
-     <ul class="b-menu b-menu_v"><li class="b-menu-item">            <a class="b-menu-item-in" href="#lol">Скорая помощь</a></li><li class="b-menu-item">            <a class="b-menu-item-in" href="#lol">Словарь терминов</a></li></ul>
+     <ul class="b-menu b-menu_v"><li class="b-menu-item"><a class="b-menu-item-in" href="articles/">Статьи</a></li><li class="b-menu-item"><a class="b-menu-item-in" href="#lol">Видео</a></li></ul>
+     <ul class="b-menu b-menu_v"><li class="b-menu-item"><a class="b-menu-item-in" href="#lol">Каталог клиник</a></li><li class="b-menu-item"><a class="b-menu-item-in" href="#lol">Вопрос-ответ</a></li></ul>
+     <ul class="b-menu b-menu_v"><li class="b-menu-item"><a class="b-menu-item-in" href="#lol">Скорая помощь</a></li><li class="b-menu-item"><a class="b-menu-item-in" href="#lol">Словарь терминов</a></li></ul>
     </nav><form action="" class="b-search b-col b-col_narrow">
-     <input class="b-search-submit" type="submit" value="Найти" />
+     <input class="b-search-submit" tabindex="99" type="submit" value="Найти" />
      <span class="b-search-in">
-      <input class="b-search-input" placeholder="поиск" type="search" />
+      <input class="b-search-input" placeholder="поиск" tabindex="98" type="search" />
      </span>
     </form><!--
      Отключено пока не дошли до этого этапа<div class="b-page-extranav b-col b-col_narrow">
@@ -39,9 +39,11 @@
      Facebook, Tweet, Vkontakte
     </div></header>
    <UL class="b-cols b-col b-col_whole b-boyan"><LI class="b-col b-col_half b-boyan-item b-boyan-item_current">
-     <h2 class="b-boyan-tab">
-      Основные заболевания
-     </h2>
+     <a class="b-link b-link_w" href="#lol">
+      <h2 class="b-boyan-tab">
+       Основные заболевания
+      </h2>
+     </a>
      <div class="b-snippet">
       <div class="b-snippet-figure">
        <img alt="" class="b-snippet-pic" src="http://placekitten.com/200/134" />
@@ -66,9 +68,11 @@
       </div>
      </div>
     </LI><LI class="b-col b-col_half b-boyan-item b-boyan-item_v2" style="left: 50%">
-     <h2 class="b-boyan-tab">
-      Удаление зубов
-     </h2>
+     <a class="b-link b-link_w" href="#lol">
+      <h2 class="b-boyan-tab">
+       Удаление зубов
+      </h2>
+     </a>
      <div class="b-snippet">
       <div class="b-snippet-figure">
        <img alt="" class="b-snippet-pic" src="http://placekitten.com/200/134" />
@@ -93,9 +97,11 @@
       </div>
      </div>
     </LI><LI class="b-col b-col_half b-boyan-item b-boyan-item_v2" style="left: 66.6%">
-     <h2 class="b-boyan-tab">
-      Брекет-системы
-     </h2>
+     <a class="b-link b-link_w" href="#lol">
+      <h2 class="b-boyan-tab">
+       Брекет-системы
+      </h2>
+     </a>
      <div class="b-snippet">
       <div class="b-snippet-figure">
        <img alt="" class="b-snippet-pic" src="http://placekitten.com/200/134" />
@@ -120,9 +126,12 @@
       </div>
      </div>
     </LI><LI class="b-col b-col_half b-boyan-item b-boyan-item_v2" style="left: 83.2%">
-     <h2 class="b-boyan-tab">
-      Протезы [new]
-     </h2>
+     <a class="b-link b-link_w" href="#lol">
+      <h2 class="b-boyan-tab">
+       Протезы
+       <span class="b-ico b-ico_new"></span>
+      </h2>
+     </a>
      <div class="b-snippet">
       <div class="b-snippet-figure">
        <img alt="" class="b-snippet-pic" src="http://placekitten.com/200/134" />
@@ -199,7 +208,7 @@
    <footer class="b-page-footer b-cols"><div class="b-page-copy b-col b-col_narrow">
      <div class="b-page-company">© Мудрый зуб</div>
      2010, Все права защищены.
-    </div><ul class="b-menu b-col b-col_wide"><li class="b-menu-item">          <a class="b-menu-item-in" href="#lol">О проекте</a></li><li class="b-menu-item">          <a class="b-menu-item-in" href="#lol">Реклама</a></li><li class="b-menu-item">          <a class="b-menu-item-in" href="#lol">Партнёрам</a></li></ul></footer>
+    </div><ul class="b-menu b-col b-col_wide"><li class="b-menu-item"><a class="b-menu-item-in" href="#lol">О проекте</a></li><li class="b-menu-item"><a class="b-menu-item-in" href="#lol">Реклама</a></li><li class="b-menu-item"><a class="b-menu-item-in" href="#lol">Партнёрам</a></li></ul></footer>
   </div>
  </div>
  <!-- TODO: need non-blocking js includes here -->
