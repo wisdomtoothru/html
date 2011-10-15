@@ -52,4 +52,25 @@
 		color: #88CBEA;
 		}
 	
+/* Popups' context decrarations */
+.b-popup .b-form {
+	padding: 1.2em 124px 1.2em 0;
 	
+	font-size: 1.6em;
+	line-height: 23px;
+	}
+	.b-popup .b-form .b-form-value_big {
+		width: auto;
+		clear: both;
+		margin-right: -104px;
+		margin-left: -1px;
+		}
+.b-popup .b-term {
+	padding-top: 1.2em;
+	padding-bottom: 1.2em;
+	}
+	.b-popup .b-term .b-header,
+	.b-popup .b-term .b-term-subheader {
+		margin-left: -30px;
+		}
+

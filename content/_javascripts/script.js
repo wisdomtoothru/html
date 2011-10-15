@@ -69,7 +69,7 @@ document.documentElement.id = "js";
 	});
 	
 	$('.b-popup-close').click(function() {
-		$('.b-popup').fadeOut();
+		$(this).closest('.b-popup').fadeOut();
 		return false;
 	});
 

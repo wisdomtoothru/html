@@ -81,7 +81,7 @@ page_type: "article"
 
       %p
         Брекет система — это система, предназначенная для придания зубам правильного положения. А сами брекеты это маленькие
-        %a.b-link.b-link_w.b-link_js<
+        %a.b-link.b-link_w.b-link_js(href="#Term1")<
           «
           %span.b-link-in> замочки
           »
@@ -221,4 +221,18 @@ page_type: "article"
         %dd.b-form-value
           %input.b-form-input{:type => "email", :id => "AskMail", :name => "mail"}
       %input{:type => "submit", :value => "Отправить"}
+  %span.b-popup-close ×
+
+.b-popup#Term1{:style => "top:160px;left:132px;display:none;"}
+  .b-popup-in
+    %dl.b-term
+      %dt.b-header
+        %a.b-link{:href => "#lol"}
+          Абстракция
+      %dd.b-term-content
+        .b-term-subheader
+          (лат. название — <dfn class="b-term-latin">аbstractio</dfn>)
+        .b-term-text
+          Удаление, отвлечение — диагностический термин по классификации аномалий видов прикуса по Р. Simon, означающий расположение зубного ряда или части его ниже окклюзионной линии. Абстракция определяется по отношению к франкфуртской горизонтали.
+          (Отступ слева будет задаваться контекстно от положения в раскладке)
   %span.b-popup-close ×
