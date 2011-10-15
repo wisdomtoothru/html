@@ -1,0 +1,74 @@
+/* Forms
+---------------------------------------*/
+.b-form {
+	
+	}
+	.b-popup .b-form {
+		padding: 1.2em 124px 1.2em 0;
+		
+		font-size: 1.6em;
+		line-height: 23px;
+		}
+	.b-popup .b-form .b-form-value_big {
+		width: auto;
+		clear: both;
+		margin-right: -104px;
+		margin-left: -1px;
+		}
+
+.b-form-fields {
+	padding-bottom: 1.2em;
+	}
+
+	.b-form-label {
+		float: left;
+		clear: left;
+	
+		padding: 2px .4em 0 0;
+		}
+	.b-form-value {
+		display: block;
+		overflow: hidden;
+		}
+		.b-form-value .b-form-input {
+			width: 100%;
+			}
+		.b-form-value_big {
+			width: 100%;
+			margin-bottom: 1em;
+			}
+	
+/* Form input */
+.b-form-input {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	outline: none;
+
+	font: 1em/23px Arial, sans-serif;
+	
+	background: url(../../i/forminput.png) 100% 0;
+	
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-transition: -webkit-box-shadow .2s ease, border .2s ease;
+	   -moz-transition:    -moz-box-shadow .2s ease, border .2s ease;
+	     -o-transition:      -o-box-shadow .2s ease, border .2s ease;
+	        transition:         box-shadow .2s ease, border .2s ease;
+	}
+/*	.b-form-input:focus {
+		-webkit-box-shadow: inset 0 0 5px #73AAE1;
+		   -moz-box-shadow: inset 0 0 5px #73AAE1;
+		     -o-box-shadow: inset 0 0 5px #73AAE1;
+		        box-shadow: inset 0 0 5px #73AAE1;
+		}*/
+	TEXTAREA.b-form-input {
+		display: block;
+		
+		overflow: auto;
+		
+		width: 100%;
+		
+		resize: vertical;
+		}

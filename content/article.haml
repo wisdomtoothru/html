@@ -46,7 +46,7 @@ page_type: "article"
             .b-snippet-meta.b-snippet-meta_online
               .b-ico.b-ico_pseudo.b-ico_bullet •
               На сайте
-            %a.b-button(href='#lol')<
+            %a.b-button(href='#Ask')<
               %span.b-button-in<
                 Задать вопрос
         .b-incut-divider
@@ -203,3 +203,22 @@ page_type: "article"
         %h2.b-header.b-header_middle.b-header_v2
           Комментарии Вконтакте
         Тут будет виджет комментариев вконтакте
+
+.b-popup#Ask{:style => "top:160px;left:132px;display:none;"}
+  .b-popup-in
+    %form.b-form{:action => ""}
+      %dl.b-form-fields
+        %dt.b-form-label
+          %label.b-form-label-in{:for => "AskWhat"} я хотел спросить:
+        %dd.b-form-value.b-form-value_big
+          %textarea.b-form-input{:id => "AskWhat", :name => "what", :cols => "30", :rows => "4"}
+        %dt.b-form-label
+          %label.b-form-label-in{:for => "AskWho"} меня зовут:
+        %dd.b-form-value
+          %input.b-form-input{:type => "text", :id => "AskWho", :name => "who"}
+        %dt.b-form-label
+          %label.b-form-label-in{:for => "AskMail"} а моя эл. почта:
+        %dd.b-form-value
+          %input.b-form-input{:type => "email", :id => "AskMail", :name => "mail"}
+      %input{:type => "submit", :value => "Отправить"}
+  %span.b-popup-close ×

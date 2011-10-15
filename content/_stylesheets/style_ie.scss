@@ -5,6 +5,8 @@
 @import "parts/search_ie.scss";
 @import "parts/icons_ie.scss";
 @import "parts/snippets_ie.scss";
+@import "parts/popup_ie.scss";
+@import "parts/forms_ie.scss";
 '
   @imports.gsub!('.scss','.css') if @config[:debug]
 %>

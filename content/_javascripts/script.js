@@ -56,4 +56,28 @@ document.documentElement.id = "js";
 	// Focus to the search terms field
 	$('.b-page_terms .b-terms-search .b-search-input').focus();
 	
+	// Popup
+	$('a[href^="#"]').click(function() {
+		var popup = $($(this).attr('href')+'.b-popup');
+		if (popup) {
+			popup.fadeIn().css({
+				'left':$(this).offset().left + $(this)[0].scrollWidth/2,
+				'top':$(this).offset().top - popup[0].scrollHeight - $('.b-layout').offset().top
+			}).find('input,textarea')[0].focus()
+		}
+		// Add better positioning
+	});
+	
+	$('.b-popup-close').click(function() {
+		$('.b-popup').fadeOut();
+		return false;
+	});
+
+	$(document).keyup(function(e) {
+		if (e.keyCode == 27) {
+			$('.b-popup').fadeOut();
+		}
+	});
+	
+
 })();

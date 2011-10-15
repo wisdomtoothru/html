@@ -1,0 +1,55 @@
+/* Popup
+---------------------------------------*/
+#js .b-popup {
+	position: absolute;
+	z-index: 9999;
+
+	width: 560px;
+	max-width: 100%;
+	border: 3px solid #8AC7E6;
+	border-color: 3px solid rgba(138,199,230,.95);
+	margin: -6px 0 0 -283px;
+	
+	background: #E3F6FF;
+	background: rgba(227,246,255,.95);
+	
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	     -o-border-radius: 5px;
+	        border-radius: 5px;
+	-webkit-box-shadow: 0 10px 20px -12px rgba(0,0,0,0.75);
+	   -moz-box-shadow: 0 10px 20px -12px rgba(0,0,0,0.75);
+	     -o-box-shadow: 0 10px 20px -12px rgba(0,0,0,0.75);
+	        box-shadow: 0 10px 20px -12px rgba(0,0,0,0.75);
+	
+	}
+	#js .b-popup:after,
+	#js .b-popup_after {
+		content: "";
+
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		
+		width: 23px;
+		height: 15px;
+		margin: 0 0 0 -11px;
+		
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAPCAYAAAAPr1RWAAAAiUlEQVR42q3OsQ5AQBCEYc+v8UhUxFsQyakpLqFZ2U1kGuwOiskVl/v+K8ouSZuyTFn+mnnqGu4HeBg4Ap/hqp/V0vPEsWZctxewvYODnwcCPKyu4X6Ahw0XkdtAPSz7A2z31zBwP8DDagL3AiQMnAgEYeDRAAEDJwJRGLgb4GHgdMCHgVMBH8YOQQtVmxR5yzUAAAAASUVORK5CYII=) 0 0 no-repeat;
+		}
+	
+	.b-popup-in {
+		padding: 0 42px;
+		}
+	.b-popup-close {
+		position: absolute;
+		top: 7px;
+		right: 8px;
+		
+		cursor: pointer;
+		
+		font: 17px/1 Verdana, sans-serif;
+		color: #88CBEA;
+		}
+	
+	
