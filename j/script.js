@@ -56,4 +56,49 @@ document.documentElement.id = "js";
 	// Focus to the search terms field
 	$('.b-page_terms .b-terms-search .b-search-input').focus();
 	
+	// Popup
+	$('a[href^="#"]').click(function() {
+		var popup = $($(this).attr('href')+'.b-popup');
+		if (popup.length) {
+			if (popup.is(':visible')) {
+				popup.fadeOut();
+				return false;
+			} else {
+				popup.fadeIn().css({
+					'left':$(this).offset().left + $(this)[0].scrollWidth/2,
+					'top':$(this).offset().top - popup[0].scrollHeight - $('.b-layout').offset().top
+				});
+				var someInput = popup.find('input,textarea');
+				if (someInput.length) {
+					someInput[0].focus()
+				}
+			}
+		}
+		// Add better positioning
+	});
+	
+	$('.b-popup-close').click(function() {
+		$(this).closest('.b-popup').fadeOut();
+		return false;
+	});
+
+	$(document).keyup(function(e) {
+		if (e.keyCode == 27) {
+			$('.b-popup').fadeOut();
+		}
+	});
+	
+	// Answering prototype (need ajax here)
+	$('.b-qa-reanswer').click(function() {
+		var thisQuestion = $(this).closest('.b-qa')
+		thisQuestion.addClass('b-qa_current').prevAll('.b-qa').remove();
+		thisQuestion.find('.b-qa-answer_selected').removeClass('b-qa-answer_selected');
+
+		return false;
+	});
+	
+	$('.b-qa-answer-link').click(function() {
+		$(this).closest('.b-qa-answer').addClass('b-qa-answer_selected').closest('.b-qa').removeClass('b-qa_current');
+	});
+	
 })();
