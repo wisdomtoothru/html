@@ -8,6 +8,7 @@
 - [Список терминов](http://wisdomtoothru.github.com/html/terms/)
 - [Категория списка терминов](http://wisdomtoothru.github.com/html/terms-sub/)
 - [Отдельный термин](http://wisdomtoothru.github.com/html/term/)
+- [Определение симптомови постановка диагноза](http://wisdomtoothru.github.com/html/diagnosis/)
 
 ## Как склонировать именно эту ветку со статикой к себе?
 
