@@ -60,10 +60,15 @@ document.documentElement.id = "js";
 	$('a[href^="#"]').click(function() {
 		var popup = $($(this).attr('href')+'.b-popup');
 		if (popup) {
-			popup.fadeIn().css({
-				'left':$(this).offset().left + $(this)[0].scrollWidth/2,
-				'top':$(this).offset().top - popup[0].scrollHeight - $('.b-layout').offset().top
-			}).find('input,textarea')[0].focus()
+			if (popup.is(':visible')) {
+				popup.fadeOut();
+				return false;
+			} else {
+				popup.fadeIn().css({
+					'left':$(this).offset().left + $(this)[0].scrollWidth/2,
+					'top':$(this).offset().top - popup[0].scrollHeight - $('.b-layout').offset().top
+				}).find('input,textarea')[0].focus()
+			}
 		}
 		// Add better positioning
 	});
