@@ -7,6 +7,7 @@
 @import "parts/snippets_ie.scss";
 @import "parts/popup_ie.scss";
 @import "parts/forms_ie.scss";
+@import "parts/qa_ie.scss";
 '
   @imports.gsub!('.scss','.css') if @config[:debug]
 %>

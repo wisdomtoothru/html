@@ -59,7 +59,7 @@ document.documentElement.id = "js";
 	// Popup
 	$('a[href^="#"]').click(function() {
 		var popup = $($(this).attr('href')+'.b-popup');
-		if (popup) {
+		if (popup.length) {
 			if (popup.is(':visible')) {
 				popup.fadeOut();
 				return false;
@@ -67,7 +67,11 @@ document.documentElement.id = "js";
 				popup.fadeIn().css({
 					'left':$(this).offset().left + $(this)[0].scrollWidth/2,
 					'top':$(this).offset().top - popup[0].scrollHeight - $('.b-layout').offset().top
-				}).find('input,textarea')[0].focus()
+				});
+				var someInput = popup.find('input,textarea');
+				if (someInput.length) {
+					someInput[0].focus()
+				}
 			}
 		}
 		// Add better positioning
@@ -84,5 +88,17 @@ document.documentElement.id = "js";
 		}
 	});
 	
+	// Answering prototype (need ajax here)
+	$('.b-qa-reanswer').click(function() {
+		var thisQuestion = $(this).closest('.b-qa')
+		thisQuestion.addClass('b-qa_current').prevAll('.b-qa').remove();
+		thisQuestion.find('.b-qa-answer_selected').removeClass('b-qa-answer_selected');
 
+		return false;
+	});
+	
+	$('.b-qa-answer-link').click(function() {
+		$(this).closest('.b-qa-answer').addClass('b-qa-answer_selected').closest('.b-qa').removeClass('b-qa_current');
+	});
+	
 })();

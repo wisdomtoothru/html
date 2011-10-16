@@ -1,0 +1,114 @@
+/* Question-answers
+---------------------------------------*/
+.b-qa {
+	overflow: hidden;
+	
+	margin-top: 1.5em;
+	}
+	.b-qa-question {
+		margin-bottom: 6px;
+		}
+	
+	.b-qa-answers {
+		position: relative;
+
+		display: inline-block;
+		
+		margin: 0 0 0 32px;
+		}
+	
+	.b-qa-answer {
+		display: none;
+		}
+	.b-qa-answer-link {
+		font-size: 1.4em;
+		color: #000;
+		}
+	.b-qa-answer_selected {
+		display: inline;
+		}
+		.b-qa-answer_selected .b-qa-answer-link {
+			font-weight: bold;
+
+			border-bottom: 0 !important;
+			}
+	.b-qa-answers-in,
+	.b-qa-reanswer {
+		display: inline;
+		}
+	.b-qa-reanswer {
+		margin: 0 0 0 1em;
+		
+		font-size: 1.2em;
+		
+		color: #00AA70;
+		}
+	.b-qa-reanswer:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		}
+	
+	
+/* Unanswered question */
+.b-qa_current {
+	padding-bottom: 3em;
+	border-bottom: 1px solid #D7EAF6;
+	}
+	.b-qa_current .b-qa-question {
+		font-size: 3em;
+		color: #00AA70;
+		}
+	
+	.b-qa_current .b-qa-reanswer {
+		display: none;
+		}
+		.b-qa_current .b-qa-answer {
+			display: block;
+			}
+			.b-qa_current .b-qa-answer-link {
+				font-size: 1.6em;
+
+				text-transform: lowercase;
+				}
+
+.b-qa-adviser {
+	float: right;
+	
+	width: 164px;
+	height: 220px;
+	padding: 0 7.9% 0 0;
+	margin: 8px -11px 0 7.7%;
+	
+	background: url(../i/adviser.jpg) 0 0 no-repeat;
+	}
+
+.b-qa-tip {
+	position: relative;
+	left: 11px;
+	
+	padding: .8em 17px;
+	border: 3px solid #E1F6FF;
+	margin: 1em 7.9% 27px -11px;
+	
+	font-size: 1.6em;
+	
+	-webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+	        border-radius: 6px;
+	}
+	.b-qa-tip:before {
+		content: "";
+		position: absolute;
+		top: 100%;
+		right: 40px;
+		
+		width: 16px;
+		height: 18px;
+		
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAMAAABl5a5YAAAAWlBMVEXj9v/q+P/1/P/////4/f/t+f/m9//r+f/2/P/y+//w+v/l9//8/v/u+v/0+//o+P/p+P/5/f/x+v/9/v/7/v/6/v/+///k9v/n9//v+v/6/f/o9//r+P/s+f9v+FkjAAAAgElEQVQYGQXBC0KCAABAsSfDNNAINdA+979mW1UdBmA8vlVVnWCsqqo641gF3mvCXJfAtT4YaxH4rJVr3QTmuntUX4J7zRzrRDDWwVCtBLe6rdWEYKlxqWVDuNT+rP0B4VXVPoDY5qr9DMRU9fwGZK32aQPo/tP8ugDQ79+wAcA/sW4FdbTzp0kAAAAASUVORK5CYII=) 0 0 no-repeat;
+		}
+	
