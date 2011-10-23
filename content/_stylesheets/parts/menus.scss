@@ -61,7 +61,8 @@ A.b-menu-item-in:visited:hover {
 .b-menu_crumbs .b-menu-item {
 	margin-right: 4px;
 	}
-.b-menu_crumbs .b-menu-item:after {
+.b-menu_crumbs .b-menu-item:after,
+.b-menu_crumbs .b-menu-item_after {
 	content: "/";
 	margin-left: 4px;
 	}

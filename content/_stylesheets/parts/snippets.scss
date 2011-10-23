@@ -26,7 +26,8 @@
 		
 		padding-bottom: 10px;
 		}
-		.b-snippet .b-header .b-link:before {
+		.b-snippet .b-header .b-link:before,
+		.b-snippet .b-header .b-link_before {
 			content: "";
 
 			position: absolute;
@@ -107,7 +108,8 @@
 .b-snippet_tool {
 	padding-left: 15.5%; /* Need to adjust for context */
 	}
-	.b-snippet_tool:before {
+	.b-snippet_tool:before,
+	.b-snippet_tool_before {
 		content: "";
 	
 		position: absolute;
@@ -119,7 +121,8 @@
 	
 		background: url(data:image/png;base64,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) 50% 100% no-repeat;
 		}
-		.b-snippet_tool_v2:before {
+		.b-snippet_tool_v2:before,
+		.b-snippet_tool_v2_before {
 			background-position: 50% 0;
 			}
 	.b-snippet_tool .b-header {
@@ -195,7 +198,8 @@
 		}
 
 /* Video snippet */
-.b-snippet_video .b-header .b-link:before {
+.b-snippet_video .b-header .b-link:before,
+.b-snippet_video .b-header .b-link_before {
 	display: none;
 	}
 	.b-snippet_video .b-snippet-figure {

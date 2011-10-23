@@ -43,7 +43,8 @@
 		
 		color: #00AA70;
 		}
-	.b-qa-reanswer:before {
+	.b-qa-reanswer:before,
+	.b-qa-reanswer_before {
 		content: "";
 		position: absolute;
 		top: 0;
@@ -100,7 +101,8 @@
 	   -moz-border-radius: 6px;
 	        border-radius: 6px;
 	}
-	.b-qa-tip:before {
+	.b-qa-tip:before,
+	.b-qa-tip_before {
 		content: "";
 		position: absolute;
 		top: 100%;

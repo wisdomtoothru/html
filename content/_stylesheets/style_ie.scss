@@ -13,3 +13,49 @@
 %>
 
 <%= @imports %>
+
+/* inline-block hacks */
+.b-ad,
+.b-ad-in,
+.b-boyan-tab,
+.b-footnotes-in,
+.b-footnote-mark,
+.b-footnote-content,
+.b-incut_quirky .b-incut-item,
+.b-incut_quirky .b-incut-divider,
+.b-incut_quirky .b-incut-helper,
+.b-col,
+.b-letterlist-item .b-link,
+.b-menu-item,
+.b-menu-item-in,
+.b-page-header .b-menu,
+.b-snippet_mini .b-header {
+	display: inline;
+	zoom: 1;
+	}
+
+/* Zoom */
+.b-article-text,
+.b-comment
+	zoom: 1;
+	}
+
+/* Before/After */
+.b-page-logo-in {
+	behavior: expression(IExpr.fix(this,'before','after'));
+	}
+
+.b-menu_crumbs .b-menu-item,
+.b-popup {
+	behavior: expression(IExpr.fix(this,'after'));
+	}
+
+.b-comment_special,
+.b-qa-reanswer,
+.b-qa-tip,
+.b-snippet-meta-item,
+.b-snippet .b-header .b-link,
+.b-snippet_tool {
+	behavior: expression(IExpr.fix(this,'before'));
+	}
+
