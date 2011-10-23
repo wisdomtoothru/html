@@ -36,7 +36,9 @@
 
 /* Zoom */
 .b-article-text,
-.b-comment
+.b-comment,
+.b-qa-tip,
+.b-terms-search .b-search {
 	zoom: 1;
 	}
 
@@ -59,3 +61,8 @@
 	behavior: expression(IExpr.fix(this,'before'));
 	}
 
+
+/* Some minor fixes */
+.b-letterlist-item_lettered .b-link {
+	line-height: 1.2em;
+	}
