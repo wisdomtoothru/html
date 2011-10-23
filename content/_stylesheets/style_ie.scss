@@ -38,6 +38,7 @@
 .b-article-text,
 .b-comment,
 .b-qa-tip,
+.b-notification_popup,
 .b-terms-search .b-search {
 	zoom: 1;
 	}
@@ -57,7 +58,8 @@
 .b-qa-tip,
 .b-snippet-meta-item,
 .b-snippet .b-header .b-link,
-.b-snippet_tool {
+.b-snippet_tool,
+.b-notification_popup {
 	behavior: expression(IExpr.fix(this,'before'));
 	}
 

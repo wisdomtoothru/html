@@ -64,3 +64,26 @@
 	.b-page_terms .b-page-content .b-term-content {
 		margin-left: 8.3%;
 		}
+
+/* Diagnosis
+---------------------------------------*/
+.b-page_diagnosis .b-page-content .b-col_wide {
+	width: 60%;
+	margin-right: 5%;
+	}
+
+.b-page_diagnosis .b-notification_warning,
+.b-page_diagnosis .b-notification_popup {
+	position: relative;
+	left: 15px;
+	margin-right: 8.4%;
+	margin-left: -15px;
+	}
+
+.b-page_diagnosis .b-page-content .b-col_wide>.b-snippet {
+	margin: 0 16.8% 2.8em 8.4%;
+	}
+
+.b-page_diagnosis .b-page-content .b-col_half .b-snippet_mini {
+	margin-top: 14px;
+	}
