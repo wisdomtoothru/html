@@ -1,14 +1,18 @@
 .b-search {
-	padding-top: 5px;
+	padding-top: 2px;
 	font-size: 1.2em;
 	}
 	.b-search-submit {
+		position: relative;
+		top: 3px;
 		float: right;
 		}
 	.b-search-in {
+		position: relative;
+		left: -3px;
 		display: block;
 		overflow: hidden;
-		padding-right: 6px;
+		padding: 3px;
 		}
 	.b-search-input {
 		width: 100%;
