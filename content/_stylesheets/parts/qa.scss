@@ -32,7 +32,9 @@
 
 			border-bottom: 0 !important;
 			}
-	.b-qa-answers-in,
+	.b-qa-answers-in {
+		display: inline-block;
+		}
 	.b-qa-reanswer {
 		display: inline;
 		}
