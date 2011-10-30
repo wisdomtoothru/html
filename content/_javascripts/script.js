@@ -60,10 +60,16 @@ document.documentElement.id = "js";
 	$('a[href^="#"]').click(function() {
 		var popup = $($(this).attr('href')+'.b-popup');
 		if (popup.length) {
+			var tempID = popup.attr('id');
+			popup.removeAttr('id');
 			if (popup.is(':visible')) {
+				document.location.hash = '_';
 				popup.fadeOut();
+				
+				popup.attr('id',tempID);
 				return false;
 			} else {
+				document.location.hash = tempID;
 				popup.fadeIn().css({
 					'left':$(this).offset().left + $(this)[0].scrollWidth/2,
 					'top':$(this).offset().top - popup[0].scrollHeight - $('.b-layout').offset().top
@@ -72,6 +78,8 @@ document.documentElement.id = "js";
 				if (someInput.length) {
 					someInput[0].focus()
 				}
+				popup.attr('id',tempID);
+				return false;
 			}
 		}
 		// Add better positioning
