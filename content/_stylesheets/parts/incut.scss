@@ -71,6 +71,24 @@
 		vertical-align: top;
 		text-align: left;
 		}
+
+		/* Firefox fix */
+		@-moz-document url-prefix() {
+			.b-incut_quirky .b-incut-item {
+				white-space: nowrap;
+				}
+				.b-incut_quirky .b-snippet-figure {
+					float: none;
+					display: inline-block;
+					vertical-align: top;
+					white-space: normal;
+					}
+				.b-incut_quirky .b-snippet-content {
+					display: inline-block;
+					vertical-align: top;
+					white-space: normal;
+					}
+		}
 	.b-incut_quirky .b-incut-divider {
 		display: inline-block;
 
@@ -99,4 +117,3 @@
 		width: 46%;
 		padding-left: 10px;
 		}
-	
