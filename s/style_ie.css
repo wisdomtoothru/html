@@ -35,6 +35,9 @@
 .b-qa-tip_before {
   background-image: url(../i/tail-b.png); }
 
+.b-qa-answers-in {
+  display: inline; }
+
 /* inline-block hacks */
 .b-ad,
 .b-ad-in,
