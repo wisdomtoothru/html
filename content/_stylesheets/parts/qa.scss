@@ -26,21 +26,19 @@
 		}
 	.b-qa-answer_selected {
 		display: inline;
+
+		margin-right: 1em;
 		}
 		.b-qa-answer_selected .b-qa-answer-link {
 			font-weight: bold;
 
 			border-bottom: 0 !important;
 			}
-	.b-qa-answers-in {
+	.b-qa-answers-in,
+	.b-qa-reanswer {
 		display: inline-block;
 		}
 	.b-qa-reanswer {
-		display: inline;
-		}
-	.b-qa-reanswer {
-		margin: 0 0 0 1em;
-		
 		font-size: 1.2em;
 		
 		color: #00AA70;
