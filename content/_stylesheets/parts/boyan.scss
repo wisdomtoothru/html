@@ -36,10 +36,13 @@
 	.b-boyan-item_current {
 		cursor: default;
 		}
-		.b-boyan-item_current .b-link {
+		.b-boyan-item .b-link {
+			text-decoration: none;
+			}
+		.b-boyan-item_current .b-link,
+		.b-boyan-item_current .b-boyan-tab {
 			text-decoration: underline;
 			}
-		.b-boyan-item .b-link,
 		.b-boyan-item>.b-link {
 			text-decoration: none;
 			}
@@ -108,11 +111,15 @@
 			         -o-transform: skew(16deg);
 			            transform: skew(16deg);
 				}
+			.b-boyan-tab_new {
+				padding-right: 18px;
+				}
+			
 			.b-boyan-tab .b-ico_new {
-				position: relative;
+				position: absolute;
 				z-index: 9;
-				top: -11px;
-				margin: 0 -8px 0 0;
+				top: -3px;
+				right: 1px;
 				}
 			
 		.b-boyan-item .b-snippet {
