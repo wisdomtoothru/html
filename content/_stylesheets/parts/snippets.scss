@@ -228,10 +228,15 @@
 		.b-snippet_video .b-link_w {
 			visibility: hidden;
 			}
-		.b-snippet_video .b-link-in {
-			clear: both;
+		.b-snippet_video .b-snippet-figure+.b-link-in {
+			display: inline;
 			visibility: visible;
 			}
+			.b-snippet_video .b-snippet-figure+.b-link-in:before {
+				content: "";
+				float: left;
+				clear: both;
+				}
 		.b-snippet_video .b-link_w .b-snippet-meta {
 			visibility: visible;
 			}
