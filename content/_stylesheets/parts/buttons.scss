@@ -35,7 +35,6 @@
 	        box-shadow: 0 1px 2px rgba(99,120,146,0.6);
 	-webkit-border-radius: 6px;
 	   -moz-border-radius: 6px;
-	     -o-border-radius: 6px;
 	        border-radius: 6px;
 	-webkit-user-select: none;
 	   -moz-user-select: none;
@@ -60,9 +59,9 @@
 		background:      -o-linear-gradient(top,#0087D3,#003F71);
 		background:         linear-gradient(top,#0087D3,#003F71);
 
-		-webkit-border-radius: inherit;
-		   -moz-border-radius: inherit;
-		        border-radius: inherit;
+		-webkit-border-radius: 6px;
+		   -moz-border-radius: 6px;
+		        border-radius: 6px;
 		}
 	.b-button:after {
 		content: "";
