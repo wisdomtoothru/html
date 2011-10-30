@@ -29,6 +29,8 @@
 	        border-radius: 4px;
 	}
 	.b-ad-pic {
+		border: 1px solid #FFF;
+
 		vertical-align: top;
 		}
 	
@@ -39,3 +41,7 @@
 	width: 100%;
 	border-bottom: 2px solid #E1F6FF;
 	}
+	.b-ad_top .b-ad-pic {
+		bottom: 0;
+		}
+	
