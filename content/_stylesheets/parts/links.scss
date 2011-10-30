@@ -9,10 +9,9 @@
 		display: inline-block;
 
 		text-decoration: none;
-
-		.b-ico {
-			margin-top: -2px;
-			}
+		}
+	.b-ico {
+		margin-top: -2px;
 		}
 	/* Inner element */
 	.b-link-in {
@@ -30,6 +29,7 @@
 	}
 #js .b-link_w {
 	border-bottom: 0;
+	text-decoration: none !important;
 	}
 
 /* Hover */
