@@ -205,8 +205,9 @@
 	.b-snippet_video .b-snippet-figure {
 		position: relative;
 		float: left;
+		clear: right;
 
-		max-width: none;
+		max-width: 100%;
 		padding: 0 0 10px;
 		margin: 0 !important;
 		
@@ -227,19 +228,18 @@
 			}
 		.b-snippet_video .b-link_w {
 			visibility: hidden;
+			display: block;
 			}
-		.b-snippet_video .b-snippet-figure+.b-link-in {
-			display: inline;
-			visibility: visible;
-			}
-			.b-snippet_video .b-snippet-figure+.b-link-in:before {
-				content: "";
-				float: left;
-				clear: both;
-				}
+		.b-snippet_video .b-header .b-link-in,
 		.b-snippet_video .b-link_w .b-snippet-meta {
 			visibility: visible;
+			float: left;
+			padding: .05em .24em 0 0;
 			}
+		.b-snippet_video .b-link_w .b-snippet-meta {
+			padding: .16em 0 0;
+			}
+			
 		.b-snippet_video .b-snippet-pic {
 			max-width: 100%;
 			}
