@@ -1,42 +1,16 @@
-.b-menu-item,
-.b-menu-item-in {
-  display: inline;
-  zoom: 1; }
 
-.b-ad {
-  display: inline;
-  zoom: 1; }
 
-.b-col {
-  display: inline;
-  zoom: 1; }
 
-.b-search-in {
-  padding-right: 12px; }
+@import "parts/menus_ie.css";
+@import "parts/ads_ie.css";
+@import "parts/layouts_ie.css";
+@import "parts/search_ie.css";
+@import "parts/icons_ie.css";
+@import "parts/snippets_ie.css";
+@import "parts/popup_ie.css";
+@import "parts/forms_ie.css";
+@import "parts/qa_ie.css";
 
-.b-ico_new {
-  background-image: url(../i/new.png); }
-
-.b-snippet_tool_before {
-  background-image: url(../i/tools.png); }
-
-.b-snippet_video .b-snippet-figure_before {
-  background-image: url(../i/video-play.png); }
-
-.b-snippet .b-header .b-link_before {
-  background: url(about:blank); }
-
-#js .b-popup_after {
-  background-image: url(../i/popuptail.png); }
-
-.b-form-input {
-  background-image: url(../i/forminput.png); }
-
-.b-qa-tip_before {
-  background-image: url(../i/tail-b.png); }
-
-.b-qa-answers-in {
-  display: inline; }
 
 /* inline-block hacks */
 .b-ad,
@@ -54,8 +28,9 @@
 .b-menu-item-in,
 .b-page-header .b-menu,
 .b-snippet_mini .b-header {
-  display: inline;
-  zoom: 1; }
+	display: inline;
+	zoom: 1;
+	}
 
 /* Zoom */
 .b-article-text,
@@ -63,15 +38,18 @@
 .b-qa-tip,
 .b-notification_popup,
 .b-terms-search .b-search {
-  zoom: 1; }
+	zoom: 1;
+	}
 
 /* Before/After */
 .b-page-logo-in {
-  behavior: expression(IExpr.fix(this,'before','after')); }
+	behavior: expression(IExpr.fix(this,'before','after'));
+	}
 
 .b-menu_crumbs .b-menu-item,
 .b-popup {
-  behavior: expression(IExpr.fix(this,'after')); }
+	behavior: expression(IExpr.fix(this,'after'));
+	}
 
 .b-comment_special,
 .b-qa-reanswer,
@@ -80,8 +58,11 @@
 .b-snippet .b-header .b-link,
 .b-snippet_tool,
 .b-notification_popup {
-  behavior: expression(IExpr.fix(this,'before')); }
+	behavior: expression(IExpr.fix(this,'before'));
+	}
+
 
 /* Some minor fixes */
 .b-letterlist-item_lettered .b-link {
-  line-height: 1.2em; }
+	line-height: 1.2em;
+	}
