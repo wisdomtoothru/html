@@ -37,3 +37,9 @@ SUP {
 	
 	color: #000;
 	}
+.b-menu-item-in>SUP,
+.b-header>SUP {
+	position: absolute;
+	bottom: auto;
+	margin-bottom: 1.4ex;
+	}
