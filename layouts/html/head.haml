@@ -2,7 +2,7 @@
 - (item.reps[0].path.gsub(/[^\/]/,'').length-1).times do
   - @prefix+='../'
 
-%meta{"http-equiv" => "X-UA-Compatible", :content => "IE=EmulateIE7"}
+%meta{"http-equiv" => "X-UA-Compatible", :content => "IE=EmulateIE7,IE=edge"}
 %meta{:charset => "utf-8"}
 %meta{:name => "viewport", :content => "width=device-width"}
 
@@ -10,6 +10,6 @@
 
 / TODO: build two versions of stylesheets, on for ie and one for others
 %link{:rel => "stylesheet", :href => @prefix + "s/style.css"}
-/[if IE]
+/[if lt IE 8]
   %script{:src => @prefix + "j/script_ie.js"}
   %link{:rel => "stylesheet", :href => @prefix + "s/style_ie.css"}
