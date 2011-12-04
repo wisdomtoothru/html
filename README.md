@@ -10,6 +10,7 @@
 - [Отдельный термин](http://wisdomtoothru.github.com/html/term/)
 - [Определение симптомов и постановка диагноза](http://wisdomtoothru.github.com/html/diagnosis/)
 - [Результат определения симптомов и постановки диагноза](http://wisdomtoothru.github.com/html/diagnosis-result/)
+- [Результаты поиска](http://wisdomtoothru.github.com/html/search/)
 
 ## Как склонировать именно эту ветку со статикой к себе?
 
