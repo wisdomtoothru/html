@@ -1,0 +1,98 @@
+---
+title: "Search"
+page_type: "search"
+---
+
+.b-page-content.b-cols
+  .b-col.b-col_wide>
+    .b-header.b-header_big Поиск
+    %form.b-search{:action => ""}>
+      %input.b-search-submit{:type => "submit", :value => "Найти", :tabindex => "2"}
+      %span.b-search-in
+        %input.b-search-input{:type => "search", :placeholder => "поиск", :tabindex => "1", :value => "кариес"}
+
+    %ul.b-menu.b-menu_search
+      %li.b-menu-item.b-menu-item_current><
+        %a.b-menu-item-in.b-link_w.b-link_js
+          %span.b-link-in Все
+          %sup>
+            32
+      %li.b-menu-item><
+        %a.b-menu-item-in.b-link_w.b-link_js{:href => "#lol"}
+          %span.b-link-in Статьи
+          %sup>
+            11
+      %li.b-menu-item><
+        %a.b-menu-item-in.b-link_w.b-link_js{:href => "#lol"}
+          %span.b-link-in Термины
+          %sup>
+            8
+      %li.b-menu-item><
+        %a.b-menu-item-in.b-link_w.b-link_js{:href => "#lol"}
+          %span.b-link-in Видео
+          %sup>
+            1
+      %li.b-menu-item><
+        %a.b-menu-item-in.b-link_w.b-link_js{:href => "#lol"}
+          %span.b-link-in Вопрос-ответ
+          %sup>
+            2
+    %ol.b-search-results
+      %li.b-snippet.b-snippet_search-result
+        %h3.b-header
+          %a.b-link.b-link_w{:href => "#lol"}<
+            %span.b-link-in<
+              %span.b-found Кариес
+            %span.b-snippet-meta-item Термин
+        .b-term-subheader
+          (лат. название — <dfn class="b-term-latin">аbstractio</dfn>)
+        .b-snippet-content
+          %span.b-found Кариес
+          — это термин по классификации аномалий видов прикуса по Р. Simon, означающий расположение зубного ряда или части его ниже окклюзионной линии…
+
+      %li.b-snippet.b-snippet_search-result
+        %h3.b-header
+          %a.b-link.b-link_w{:href => "#lol"}<
+            %span.b-link-in
+              Что нужно знать про металлокерамические коронки —
+              %span.b-found кариес
+              и средства борьбы с ним
+            %span.b-snippet-meta-item Статья
+        %ul.b-snippet-meta
+          %li.b-snippet-meta-item
+            15 cен
+          %li.b-snippet-meta-item
+            %a.b-link{:href => "#lol"}
+              Профилактика заболеваний
+        .b-snippet-content
+          …какой способ реставрации лучше восстановит разрушенный зуб, вкладка, коронка или
+          %span.b-found кариес
+          традиционная пломба, волнует многих пациентов…
+
+      %li.b-snippet.b-snippet_search-result
+        %h3.b-header
+          %a.b-link.b-link_w{:href => "#lol"}<
+            %span.b-link-in
+              %span.b-found Кариозные
+              монстры
+            %span.b-snippet-meta-item Видео
+        %ul.b-snippet-meta
+          %li.b-snippet-meta-item
+            15 cен
+          %li.b-snippet-meta-item
+            Константин Константинопольский
+          %li.b-snippet-meta-item
+            %a.b-link{:href => "#lol"}
+              Пациентам
+        .b-snippet-content
+          Вопрос о том, какой способ реставрации лучше восстановит разрушенный зуб, вкладка, коронка или традиционная пломба, волнует многих пациентов.
+
+      %li.b-snippet.b-snippet_search-result
+        %a.b-link.b-link_js.b-link_more
+          Еще 50 результатов
+
+  .b-col.b-col_narrow>
+    .b-ad
+      .b-ad-title Рекламочка
+      .b-ad-in
+        %img.b-ad-pic{:src => "http://placekitten.com/240/400", :alt => ""}/

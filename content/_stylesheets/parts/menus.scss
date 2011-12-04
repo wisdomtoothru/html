@@ -50,6 +50,14 @@ A.b-menu-item-in:visited:hover {
 	color: #FFF;
 	background: #00BF81; /* Move to variable */
 	}
+	.b-menu-item_current .b-menu-item-in>SUP {
+		color: #FFF;
+		}
+	.b-menu-item_current .b-link_js,
+	.b-menu-item_current .b-link_js .b-link-in {
+		border-bottom: 0 !important;
+		}
+	
 	
 /* Vertical menu */
 .b-menu_v .b-menu-item {
@@ -98,3 +106,16 @@ A.b-menu-item-in:visited:hover {
 		text-decoration: underline;
 		color: #22B583 !important;
 		}
+
+/* Search menu */
+.b-menu_search .b-menu-item {
+	margin-right: 0;
+	white-space: nowrap;
+	}
+
+.b-menu_search .b-menu-item-in>SUP {
+	position: static;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -9px;
+	}

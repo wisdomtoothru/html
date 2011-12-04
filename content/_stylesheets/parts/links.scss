@@ -15,8 +15,6 @@
 		}
 	/* Inner element */
 	.b-link-in {
-		display: inline-block;
-
 		line-height: 1.1;
 		text-decoration: underline;
 		}
@@ -41,4 +39,10 @@ A.b-link:hover {
 .b-link_multiline,
 .b-link_multiline .b-link-in {
 	display: inline !important;
+	}
+
+/* more… */
+.b-link_more {
+	font: bold 16px/1.2 Arial, sans-serif;
+	color: #00AA70;
 	}
