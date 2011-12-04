@@ -79,8 +79,17 @@ SUP {
 .b-menu-item-in > SUP,
 .b-header > SUP {
   position: absolute;
+  display: inline;
+  /* Just for opera */
   bottom: auto;
   margin-bottom: 1.4ex; }
+
+.b-found {
+  background: #FEFFE1; }
+
+SPAN.b-found {
+  padding: 0 1px;
+  margin: 0 -1px; }
 
 /* Links
 ---------------------------------------*/
@@ -99,7 +108,6 @@ SUP {
 
 /* Inner element */
 .b-link-in {
-  display: inline-block;
   line-height: 1.1;
   text-decoration: underline; }
 
@@ -122,6 +130,11 @@ A.b-link:hover {
 .b-link_multiline,
 .b-link_multiline .b-link-in {
   display: inline !important; }
+
+/* more… */
+.b-link_more {
+  font: bold 16px/1.2 Arial, sans-serif;
+  color: #00AA70; }
 
 /* Icons
 ---------------------------------------*/
@@ -215,6 +228,13 @@ A.b-menu-item-in:visited:hover {
   background: #00BF81;
   /* Move to variable */ }
 
+.b-menu-item_current .b-menu-item-in > SUP {
+  color: #FFF; }
+
+.b-menu-item_current .b-link_js,
+.b-menu-item_current .b-link_js .b-link-in {
+  border-bottom: 0 !important; }
+
 /* Vertical menu */
 .b-menu_v .b-menu-item {
   display: block;
@@ -258,6 +278,17 @@ A.b-menu-item-in:visited:hover {
 .b-menu_pages .b-link:visited .b-link-in {
   text-decoration: underline;
   color: #22b583 !important; }
+
+/* Search menu */
+.b-menu_search .b-menu-item {
+  margin-right: 0;
+  white-space: nowrap; }
+
+.b-menu_search .b-menu-item-in > SUP {
+  position: static;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -9px; }
 
 /* Buttons
 ---------------------------------------*/
@@ -738,6 +769,9 @@ button.b-button_v2:hover {
   visibility: hidden;
   display: block; }
 
+.b-snippet_video .b-header .b-link-in {
+  clear: left; }
+
 .b-snippet_video .b-header .b-link-in,
 .b-snippet_video .b-link_w .b-snippet-meta {
   visibility: visible;
@@ -749,6 +783,38 @@ button.b-button_v2:hover {
 
 .b-snippet_video .b-snippet-pic {
   max-width: 100%; }
+
+/* Search snippet */
+.b-snippet_search-result {
+  margin-bottom: 3em; }
+
+.b-snippet_search-result:first-child {
+  counter-reset: result_item; }
+
+.b-snippet_search-result .b-header .b-link_w:first-child:before {
+  font: 16px/1.2 Arial, sans-serif;
+  content: counter(result_item) ".";
+  counter-increment: result_item;
+  position: absolute;
+  left: -1.5em;
+  width: 1.25em;
+  padding: .2em .25em 0 0;
+  text-align: right;
+  color: #000; }
+
+.b-snippet_search-result .b-header {
+  padding-bottom: 6px; }
+
+.b-snippet_search-result .b-snippet-content {
+  padding-top: 6px; }
+
+.b-snippet_search-result .b-term-subheader {
+  padding-left: 15px; }
+
+.b-snippet_search-result .b-header .b-snippet-meta-item {
+  font: 16px/1 Arial, sans-serif;
+  margin-left: 1.5em;
+  color: #86C2E0; }
 
 /* Terms
 ---------------------------------------*/
@@ -1858,3 +1924,20 @@ TEXTAREA.b-form-input {
 
 .b-page_diagnosis .b-page-content .b-col_half .b-snippet_mini {
   margin-top: 14px; }
+
+/* Search results */
+.b-page_search .b-page-content .b-col_wide {
+  width: 60%;
+  margin-right: 5%; }
+
+.b-page_search .b-page-content .b-search {
+  margin-top: 1em; }
+
+.b-page_search .b-search-results {
+  padding-left: 7.8%; }
+
+.b-page_search .b-snippet_search-result {
+  margin-left: -15px; }
+
+.b-page_search .b-menu_search {
+  margin: 1em 0 2.2em; }
